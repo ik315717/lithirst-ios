@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB966F831E75BAE200842CB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB966F821E75BAE200842CB8 /* AppDelegate.swift */; };
+		FB966F851E75BAE200842CB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB966F841E75BAE200842CB8 /* ViewController.swift */; };
+		FB966F881E75BAE200842CB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB966F861E75BAE200842CB8 /* Main.storyboard */; };
+		FB966F8B1E75BAE200842CB8 /* LI_Thirst.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB966F891E75BAE200842CB8 /* LI_Thirst.xcdatamodeld */; };
+		FB966F8D1E75BAE200842CB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB966F8C1E75BAE200842CB8 /* Assets.xcassets */; };
+		FB966F901E75BAE200842CB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB966F8E1E75BAE200842CB8 /* LaunchScreen.storyboard */; };
+		FB966F9B1E75BAE200842CB8 /* LI_ThirstTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB966F9A1E75BAE200842CB8 /* LI_ThirstTests.swift */; };
+		FB966FA61E75BAE200842CB8 /* LI_ThirstUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB966FA51E75BAE200842CB8 /* LI_ThirstUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB966F971E75BAE200842CB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB966F771E75BAE100842CB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB966F7E1E75BAE100842CB8;
+			remoteInfo = "LI Thirst";
+		};
+		FB966FA21E75BAE200842CB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB966F771E75BAE100842CB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB966F7E1E75BAE100842CB8;
+			remoteInfo = "LI Thirst";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FB966F7F1E75BAE200842CB8 /* LI Thirst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LI Thirst.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB966F821E75BAE200842CB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB966F841E75BAE200842CB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FB966F871E75BAE200842CB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB966F8A1E75BAE200842CB8 /* LI_Thirst.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LI_Thirst.xcdatamodel; sourceTree = "<group>"; };
+		FB966F8C1E75BAE200842CB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB966F8F1E75BAE200842CB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB966F911E75BAE200842CB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB966F961E75BAE200842CB8 /* LI ThirstTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LI ThirstTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB966F9A1E75BAE200842CB8 /* LI_ThirstTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LI_ThirstTests.swift; sourceTree = "<group>"; };
+		FB966F9C1E75BAE200842CB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB966FA11E75BAE200842CB8 /* LI ThirstUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LI ThirstUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB966FA51E75BAE200842CB8 /* LI_ThirstUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LI_ThirstUITests.swift; sourceTree = "<group>"; };
+		FB966FA71E75BAE200842CB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB966F7C1E75BAE100842CB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB966F931E75BAE200842CB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB966F9E1E75BAE200842CB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB966F761E75BAE100842CB8 = {
+			isa = PBXGroup;
+			children = (
+				FB966F811E75BAE200842CB8 /* LI Thirst */,
+				FB966F991E75BAE200842CB8 /* LI ThirstTests */,
+				FB966FA41E75BAE200842CB8 /* LI ThirstUITests */,
+				FB966F801E75BAE200842CB8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB966F801E75BAE200842CB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB966F7F1E75BAE200842CB8 /* LI Thirst.app */,
+				FB966F961E75BAE200842CB8 /* LI ThirstTests.xctest */,
+				FB966FA11E75BAE200842CB8 /* LI ThirstUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB966F811E75BAE200842CB8 /* LI Thirst */ = {
+			isa = PBXGroup;
+			children = (
+				FB966F821E75BAE200842CB8 /* AppDelegate.swift */,
+				FB966F841E75BAE200842CB8 /* ViewController.swift */,
+				FB966F861E75BAE200842CB8 /* Main.storyboard */,
+				FB966F8C1E75BAE200842CB8 /* Assets.xcassets */,
+				FB966F8E1E75BAE200842CB8 /* LaunchScreen.storyboard */,
+				FB966F911E75BAE200842CB8 /* Info.plist */,
+				FB966F891E75BAE200842CB8 /* LI_Thirst.xcdatamodeld */,
+			);
+			path = "LI Thirst";
+			sourceTree = "<group>";
+		};
+		FB966F991E75BAE200842CB8 /* LI ThirstTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB966F9A1E75BAE200842CB8 /* LI_ThirstTests.swift */,
+				FB966F9C1E75BAE200842CB8 /* Info.plist */,
+			);
+			path = "LI ThirstTests";
+			sourceTree = "<group>";
+		};
+		FB966FA41E75BAE200842CB8 /* LI ThirstUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FB966FA51E75BAE200842CB8 /* LI_ThirstUITests.swift */,
+				FB966FA71E75BAE200842CB8 /* Info.plist */,
+			);
+			path = "LI ThirstUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB966F7E1E75BAE100842CB8 /* LI Thirst */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB966FAA1E75BAE200842CB8 /* Build configuration list for PBXNativeTarget "LI Thirst" */;
+			buildPhases = (
+				FB966F7B1E75BAE100842CB8 /* Sources */,
+				FB966F7C1E75BAE100842CB8 /* Frameworks */,
+				FB966F7D1E75BAE100842CB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LI Thirst";
+			productName = "LI Thirst";
+			productReference = FB966F7F1E75BAE200842CB8 /* LI Thirst.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB966F951E75BAE200842CB8 /* LI ThirstTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB966FAD1E75BAE200842CB8 /* Build configuration list for PBXNativeTarget "LI ThirstTests" */;
+			buildPhases = (
+				FB966F921E75BAE200842CB8 /* Sources */,
+				FB966F931E75BAE200842CB8 /* Frameworks */,
+				FB966F941E75BAE200842CB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB966F981E75BAE200842CB8 /* PBXTargetDependency */,
+			);
+			name = "LI ThirstTests";
+			productName = "LI ThirstTests";
+			productReference = FB966F961E75BAE200842CB8 /* LI ThirstTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FB966FA01E75BAE200842CB8 /* LI ThirstUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB966FB01E75BAE200842CB8 /* Build configuration list for PBXNativeTarget "LI ThirstUITests" */;
+			buildPhases = (
+				FB966F9D1E75BAE200842CB8 /* Sources */,
+				FB966F9E1E75BAE200842CB8 /* Frameworks */,
+				FB966F9F1E75BAE200842CB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB966FA31E75BAE200842CB8 /* PBXTargetDependency */,
+			);
+			name = "LI ThirstUITests";
+			productName = "LI ThirstUITests";
+			productReference = FB966FA11E75BAE200842CB8 /* LI ThirstUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB966F771E75BAE100842CB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "LI Thirst";
+				TargetAttributes = {
+					FB966F7E1E75BAE100842CB8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					FB966F951E75BAE200842CB8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FB966F7E1E75BAE100842CB8;
+					};
+					FB966FA01E75BAE200842CB8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FB966F7E1E75BAE100842CB8;
+					};
+				};
+			};
+			buildConfigurationList = FB966F7A1E75BAE100842CB8 /* Build configuration list for PBXProject "LI Thirst" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB966F761E75BAE100842CB8;
+			productRefGroup = FB966F801E75BAE200842CB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB966F7E1E75BAE100842CB8 /* LI Thirst */,
+				FB966F951E75BAE200842CB8 /* LI ThirstTests */,
+				FB966FA01E75BAE200842CB8 /* LI ThirstUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB966F7D1E75BAE100842CB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB966F901E75BAE200842CB8 /* LaunchScreen.storyboard in Resources */,
+				FB966F8D1E75BAE200842CB8 /* Assets.xcassets in Resources */,
+				FB966F881E75BAE200842CB8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB966F941E75BAE200842CB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB966F9F1E75BAE200842CB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB966F7B1E75BAE100842CB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB966F851E75BAE200842CB8 /* ViewController.swift in Sources */,
+				FB966F831E75BAE200842CB8 /* AppDelegate.swift in Sources */,
+				FB966F8B1E75BAE200842CB8 /* LI_Thirst.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB966F921E75BAE200842CB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB966F9B1E75BAE200842CB8 /* LI_ThirstTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB966F9D1E75BAE200842CB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB966FA61E75BAE200842CB8 /* LI_ThirstUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB966F981E75BAE200842CB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB966F7E1E75BAE100842CB8 /* LI Thirst */;
+			targetProxy = FB966F971E75BAE200842CB8 /* PBXContainerItemProxy */;
+		};
+		FB966FA31E75BAE200842CB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB966F7E1E75BAE100842CB8 /* LI Thirst */;
+			targetProxy = FB966FA21E75BAE200842CB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FB966F861E75BAE200842CB8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB966F871E75BAE200842CB8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB966F8E1E75BAE200842CB8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB966F8F1E75BAE200842CB8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB966FA81E75BAE200842CB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB966FA91E75BAE200842CB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB966FAB1E75BAE200842CB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "LI Thirst/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LI-Thirst.LI-Thirst";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FB966FAC1E75BAE200842CB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "LI Thirst/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LI-Thirst.LI-Thirst";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FB966FAE1E75BAE200842CB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "LI ThirstTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LI-Thirst.LI-ThirstTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LI Thirst.app/LI Thirst";
+			};
+			name = Debug;
+		};
+		FB966FAF1E75BAE200842CB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "LI ThirstTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LI-Thirst.LI-ThirstTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LI Thirst.app/LI Thirst";
+			};
+			name = Release;
+		};
+		FB966FB11E75BAE200842CB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "LI ThirstUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LI-Thirst.LI-ThirstUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "LI Thirst";
+			};
+			name = Debug;
+		};
+		FB966FB21E75BAE200842CB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "LI ThirstUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LI-Thirst.LI-ThirstUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "LI Thirst";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB966F7A1E75BAE100842CB8 /* Build configuration list for PBXProject "LI Thirst" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB966FA81E75BAE200842CB8 /* Debug */,
+				FB966FA91E75BAE200842CB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB966FAA1E75BAE200842CB8 /* Build configuration list for PBXNativeTarget "LI Thirst" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB966FAB1E75BAE200842CB8 /* Debug */,
+				FB966FAC1E75BAE200842CB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FB966FAD1E75BAE200842CB8 /* Build configuration list for PBXNativeTarget "LI ThirstTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB966FAE1E75BAE200842CB8 /* Debug */,
+				FB966FAF1E75BAE200842CB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FB966FB01E75BAE200842CB8 /* Build configuration list for PBXNativeTarget "LI ThirstUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB966FB11E75BAE200842CB8 /* Debug */,
+				FB966FB21E75BAE200842CB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FB966F891E75BAE200842CB8 /* LI_Thirst.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FB966F8A1E75BAE200842CB8 /* LI_Thirst.xcdatamodel */,
+			);
+			currentVersion = FB966F8A1E75BAE200842CB8 /* LI_Thirst.xcdatamodel */;
+			path = LI_Thirst.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FB966F771E75BAE100842CB8 /* Project object */;
+}
