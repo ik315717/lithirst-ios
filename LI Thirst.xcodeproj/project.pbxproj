@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DC419B18930CDF4BBF20C08 /* Pods_LI_Thirst.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2284234958F4A73DD2E60675 /* Pods_LI_Thirst.framework */; };
+		62BFC32966C83BB31D68B014 /* Pods_LI_ThirstTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 819BB570D3D406562F1EED1C /* Pods_LI_ThirstTests.framework */; };
+		E888899D6400D7D8A48BA2F4 /* Pods_LI_ThirstUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD4246A7DD6BECC0F0A934F /* Pods_LI_ThirstUITests.framework */; };
+		FB3FD7F61E777AD60004C49E /* LIMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FD7F41E777AD60004C49E /* LIMapViewController.swift */; };
+		FB3FD7F71E777AD60004C49E /* LIMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB3FD7F51E777AD60004C49E /* LIMapViewController.xib */; };
+		FB3FD7FB1E7780660004C49E /* LIVenue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FD7FA1E7780660004C49E /* LIVenue.swift */; };
+		FB3FD7FD1E7784790004C49E /* LIVenuesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FD7FC1E7784790004C49E /* LIVenuesRequest.swift */; };
 		FB966F831E75BAE200842CB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB966F821E75BAE200842CB8 /* AppDelegate.swift */; };
-		FB966F851E75BAE200842CB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB966F841E75BAE200842CB8 /* ViewController.swift */; };
-		FB966F881E75BAE200842CB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB966F861E75BAE200842CB8 /* Main.storyboard */; };
-		FB966F8B1E75BAE200842CB8 /* LI_Thirst.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB966F891E75BAE200842CB8 /* LI_Thirst.xcdatamodeld */; };
 		FB966F8D1E75BAE200842CB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB966F8C1E75BAE200842CB8 /* Assets.xcassets */; };
 		FB966F901E75BAE200842CB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB966F8E1E75BAE200842CB8 /* LaunchScreen.storyboard */; };
 		FB966F9B1E75BAE200842CB8 /* LI_ThirstTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB966F9A1E75BAE200842CB8 /* LI_ThirstTests.swift */; };
@@ -35,11 +39,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16D8EE737039431FB4655F1E /* Pods-LI Thirst.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LI Thirst.release.xcconfig"; path = "Pods/Target Support Files/Pods-LI Thirst/Pods-LI Thirst.release.xcconfig"; sourceTree = "<group>"; };
+		2284234958F4A73DD2E60675 /* Pods_LI_Thirst.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LI_Thirst.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BD4246A7DD6BECC0F0A934F /* Pods_LI_ThirstUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LI_ThirstUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E8A401164C968968EA31C2A /* Pods-LI ThirstUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LI ThirstUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LI ThirstUITests/Pods-LI ThirstUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		429F4CEE502921358771612C /* Pods-LI Thirst.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LI Thirst.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LI Thirst/Pods-LI Thirst.debug.xcconfig"; sourceTree = "<group>"; };
+		5C8974A93D23CC5EC4410EAB /* Pods-LI ThirstTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LI ThirstTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LI ThirstTests/Pods-LI ThirstTests.release.xcconfig"; sourceTree = "<group>"; };
+		756E5F91770F1CD3535A1F45 /* Pods-LI ThirstTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LI ThirstTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LI ThirstTests/Pods-LI ThirstTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7E9E214CCF7772801C136AA8 /* Pods-LI ThirstUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LI ThirstUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LI ThirstUITests/Pods-LI ThirstUITests.release.xcconfig"; sourceTree = "<group>"; };
+		819BB570D3D406562F1EED1C /* Pods_LI_ThirstTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LI_ThirstTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB3FD7F41E777AD60004C49E /* LIMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LIMapViewController.swift; sourceTree = "<group>"; };
+		FB3FD7F51E777AD60004C49E /* LIMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LIMapViewController.xib; sourceTree = "<group>"; };
+		FB3FD7FA1E7780660004C49E /* LIVenue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LIVenue.swift; sourceTree = "<group>"; };
+		FB3FD7FC1E7784790004C49E /* LIVenuesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LIVenuesRequest.swift; sourceTree = "<group>"; };
 		FB966F7F1E75BAE200842CB8 /* LI Thirst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LI Thirst.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB966F821E75BAE200842CB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FB966F841E75BAE200842CB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FB966F871E75BAE200842CB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FB966F8A1E75BAE200842CB8 /* LI_Thirst.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LI_Thirst.xcdatamodel; sourceTree = "<group>"; };
 		FB966F8C1E75BAE200842CB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB966F8F1E75BAE200842CB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB966F911E75BAE200842CB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DC419B18930CDF4BBF20C08 /* Pods_LI_Thirst.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62BFC32966C83BB31D68B014 /* Pods_LI_ThirstTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +86,69 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E888899D6400D7D8A48BA2F4 /* Pods_LI_ThirstUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD26651D20AF40CFBD5D16AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2284234958F4A73DD2E60675 /* Pods_LI_Thirst.framework */,
+				819BB570D3D406562F1EED1C /* Pods_LI_ThirstTests.framework */,
+				3BD4246A7DD6BECC0F0A934F /* Pods_LI_ThirstUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF534AC169F84C8A5D1350BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				429F4CEE502921358771612C /* Pods-LI Thirst.debug.xcconfig */,
+				16D8EE737039431FB4655F1E /* Pods-LI Thirst.release.xcconfig */,
+				756E5F91770F1CD3535A1F45 /* Pods-LI ThirstTests.debug.xcconfig */,
+				5C8974A93D23CC5EC4410EAB /* Pods-LI ThirstTests.release.xcconfig */,
+				3E8A401164C968968EA31C2A /* Pods-LI ThirstUITests.debug.xcconfig */,
+				7E9E214CCF7772801C136AA8 /* Pods-LI ThirstUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FB3FD7F11E777A5D0004C49E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FB3FD7F41E777AD60004C49E /* LIMapViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FB3FD7F21E777A6A0004C49E /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				FB3FD7F51E777AD60004C49E /* LIMapViewController.xib */,
+				FB966F8E1E75BAE200842CB8 /* LaunchScreen.storyboard */,
+			);
+			name = Nibs;
+			sourceTree = "<group>";
+		};
+		FB3FD7F81E777F160004C49E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FB3FD7FA1E7780660004C49E /* LIVenue.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FB3FD7F91E7780010004C49E /* API Requests */ = {
+			isa = PBXGroup;
+			children = (
+				FB3FD7FC1E7784790004C49E /* LIVenuesRequest.swift */,
+			);
+			name = "API Requests";
+			sourceTree = "<group>";
+		};
 		FB966F761E75BAE100842CB8 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +156,8 @@
 				FB966F991E75BAE200842CB8 /* LI ThirstTests */,
 				FB966FA41E75BAE200842CB8 /* LI ThirstUITests */,
 				FB966F801E75BAE200842CB8 /* Products */,
+				CF534AC169F84C8A5D1350BF /* Pods */,
+				AD26651D20AF40CFBD5D16AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +174,13 @@
 		FB966F811E75BAE200842CB8 /* LI Thirst */ = {
 			isa = PBXGroup;
 			children = (
+				FB3FD7F91E7780010004C49E /* API Requests */,
 				FB966F821E75BAE200842CB8 /* AppDelegate.swift */,
-				FB966F841E75BAE200842CB8 /* ViewController.swift */,
-				FB966F861E75BAE200842CB8 /* Main.storyboard */,
 				FB966F8C1E75BAE200842CB8 /* Assets.xcassets */,
-				FB966F8E1E75BAE200842CB8 /* LaunchScreen.storyboard */,
 				FB966F911E75BAE200842CB8 /* Info.plist */,
-				FB966F891E75BAE200842CB8 /* LI_Thirst.xcdatamodeld */,
+				FB3FD7F81E777F160004C49E /* Models */,
+				FB3FD7F21E777A6A0004C49E /* Nibs */,
+				FB3FD7F11E777A5D0004C49E /* View Controllers */,
 			);
 			path = "LI Thirst";
 			sourceTree = "<group>";
@@ -135,9 +210,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB966FAA1E75BAE200842CB8 /* Build configuration list for PBXNativeTarget "LI Thirst" */;
 			buildPhases = (
+				4B0E6528417DD5F52FDD8693 /* [CP] Check Pods Manifest.lock */,
 				FB966F7B1E75BAE100842CB8 /* Sources */,
 				FB966F7C1E75BAE100842CB8 /* Frameworks */,
 				FB966F7D1E75BAE100842CB8 /* Resources */,
+				41BD3E0227C22478010967C0 /* [CP] Embed Pods Frameworks */,
+				5881BFA42A1C5DD233F2DDA4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +230,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB966FAD1E75BAE200842CB8 /* Build configuration list for PBXNativeTarget "LI ThirstTests" */;
 			buildPhases = (
+				5277860584ADC3B15B258E9C /* [CP] Check Pods Manifest.lock */,
 				FB966F921E75BAE200842CB8 /* Sources */,
 				FB966F931E75BAE200842CB8 /* Frameworks */,
 				FB966F941E75BAE200842CB8 /* Resources */,
+				D7C3BB1751F0CAB28B97883E /* [CP] Embed Pods Frameworks */,
+				071095C2EA35ECACF6671591 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +251,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB966FB01E75BAE200842CB8 /* Build configuration list for PBXNativeTarget "LI ThirstUITests" */;
 			buildPhases = (
+				F11ACB131F20A1B8DC72A065 /* [CP] Check Pods Manifest.lock */,
 				FB966F9D1E75BAE200842CB8 /* Sources */,
 				FB966F9E1E75BAE200842CB8 /* Frameworks */,
 				FB966F9F1E75BAE200842CB8 /* Resources */,
+				CC8E3AB3A55C75FF7F66C4F6 /* [CP] Embed Pods Frameworks */,
+				03F4CFAA1E2EA85CC356EA97 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,6 +280,7 @@
 				TargetAttributes = {
 					FB966F7E1E75BAE100842CB8 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 253P3RGEY8;
 						ProvisioningStyle = Automatic;
 					};
 					FB966F951E75BAE200842CB8 = {
@@ -236,8 +321,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB966F901E75BAE200842CB8 /* LaunchScreen.storyboard in Resources */,
+				FB3FD7F71E777AD60004C49E /* LIMapViewController.xib in Resources */,
 				FB966F8D1E75BAE200842CB8 /* Assets.xcassets in Resources */,
-				FB966F881E75BAE200842CB8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,14 +342,153 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03F4CFAA1E2EA85CC356EA97 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LI ThirstUITests/Pods-LI ThirstUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		071095C2EA35ECACF6671591 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LI ThirstTests/Pods-LI ThirstTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41BD3E0227C22478010967C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LI Thirst/Pods-LI Thirst-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B0E6528417DD5F52FDD8693 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5277860584ADC3B15B258E9C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5881BFA42A1C5DD233F2DDA4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LI Thirst/Pods-LI Thirst-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC8E3AB3A55C75FF7F66C4F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LI ThirstUITests/Pods-LI ThirstUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7C3BB1751F0CAB28B97883E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LI ThirstTests/Pods-LI ThirstTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F11ACB131F20A1B8DC72A065 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FB966F7B1E75BAE100842CB8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB966F851E75BAE200842CB8 /* ViewController.swift in Sources */,
+				FB3FD7FD1E7784790004C49E /* LIVenuesRequest.swift in Sources */,
+				FB3FD7FB1E7780660004C49E /* LIVenue.swift in Sources */,
+				FB3FD7F61E777AD60004C49E /* LIMapViewController.swift in Sources */,
 				FB966F831E75BAE200842CB8 /* AppDelegate.swift in Sources */,
-				FB966F8B1E75BAE200842CB8 /* LI_Thirst.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,14 +524,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FB966F861E75BAE200842CB8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FB966F871E75BAE200842CB8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FB966F8E1E75BAE200842CB8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -412,9 +628,12 @@
 		};
 		FB966FAB1E75BAE200842CB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 429F4CEE502921358771612C /* Pods-LI Thirst.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 253P3RGEY8;
 				INFOPLIST_FILE = "LI Thirst/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "LI-Thirst.LI-Thirst";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,9 +643,12 @@
 		};
 		FB966FAC1E75BAE200842CB8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16D8EE737039431FB4655F1E /* Pods-LI Thirst.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 253P3RGEY8;
 				INFOPLIST_FILE = "LI Thirst/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "LI-Thirst.LI-Thirst";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -436,6 +658,7 @@
 		};
 		FB966FAE1E75BAE200842CB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 756E5F91770F1CD3535A1F45 /* Pods-LI ThirstTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -450,6 +673,7 @@
 		};
 		FB966FAF1E75BAE200842CB8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C8974A93D23CC5EC4410EAB /* Pods-LI ThirstTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -464,6 +688,7 @@
 		};
 		FB966FB11E75BAE200842CB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E8A401164C968968EA31C2A /* Pods-LI ThirstUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "LI ThirstUITests/Info.plist";
@@ -477,6 +702,7 @@
 		};
 		FB966FB21E75BAE200842CB8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E9E214CCF7772801C136AA8 /* Pods-LI ThirstUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "LI ThirstUITests/Info.plist";
@@ -507,6 +733,7 @@
 				FB966FAC1E75BAE200842CB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB966FAD1E75BAE200842CB8 /* Build configuration list for PBXNativeTarget "LI ThirstTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +742,7 @@
 				FB966FAF1E75BAE200842CB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB966FB01E75BAE200842CB8 /* Build configuration list for PBXNativeTarget "LI ThirstUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,21 +751,9 @@
 				FB966FB21E75BAE200842CB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		FB966F891E75BAE200842CB8 /* LI_Thirst.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				FB966F8A1E75BAE200842CB8 /* LI_Thirst.xcdatamodel */,
-			);
-			currentVersion = FB966F8A1E75BAE200842CB8 /* LI_Thirst.xcdatamodel */;
-			path = LI_Thirst.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = FB966F771E75BAE100842CB8 /* Project object */;
 }
