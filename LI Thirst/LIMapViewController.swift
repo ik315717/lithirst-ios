@@ -1,13 +1,18 @@
 import UIKit
 
 class LIMapViewController: UIViewController {
-
-    @IBOutlet var contentViewContainer: UIView!
-    @IBOutlet var searchBar: UISearchBar!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+  @IBOutlet var searchBar: UISearchBar!
+  @IBOutlet var contentView: UIView!
+  var venueList : Array<LIVenue> = []
+    
+  override func viewDidLoad() {
+    super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+    let apiRequest = LIVenuesRequest.init()
+    apiRequest.getVenues { venues in
+      self.venueList = venues
     }
+    
+  }
 }

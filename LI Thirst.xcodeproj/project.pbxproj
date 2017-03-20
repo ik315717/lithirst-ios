@@ -10,6 +10,8 @@
 		2DC419B18930CDF4BBF20C08 /* Pods_LI_Thirst.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2284234958F4A73DD2E60675 /* Pods_LI_Thirst.framework */; };
 		62BFC32966C83BB31D68B014 /* Pods_LI_ThirstTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 819BB570D3D406562F1EED1C /* Pods_LI_ThirstTests.framework */; };
 		E888899D6400D7D8A48BA2F4 /* Pods_LI_ThirstUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD4246A7DD6BECC0F0A934F /* Pods_LI_ThirstUITests.framework */; };
+		FB1515751E7F08EC0006C046 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1515741E7F08EC0006C046 /* NSObject.swift */; };
+		FB265AD31E78BF6A0056015B /* LIAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB265AD21E78BF6A0056015B /* LIAPIRequest.swift */; };
 		FB3FD7F61E777AD60004C49E /* LIMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FD7F41E777AD60004C49E /* LIMapViewController.swift */; };
 		FB3FD7F71E777AD60004C49E /* LIMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB3FD7F51E777AD60004C49E /* LIMapViewController.xib */; };
 		FB3FD7FB1E7780660004C49E /* LIVenue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FD7FA1E7780660004C49E /* LIVenue.swift */; };
@@ -48,6 +50,8 @@
 		756E5F91770F1CD3535A1F45 /* Pods-LI ThirstTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LI ThirstTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LI ThirstTests/Pods-LI ThirstTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7E9E214CCF7772801C136AA8 /* Pods-LI ThirstUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LI ThirstUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LI ThirstUITests/Pods-LI ThirstUITests.release.xcconfig"; sourceTree = "<group>"; };
 		819BB570D3D406562F1EED1C /* Pods_LI_ThirstTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LI_ThirstTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB1515741E7F08EC0006C046 /* NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
+		FB265AD21E78BF6A0056015B /* LIAPIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = LIAPIRequest.swift; sourceTree = "<group>"; tabWidth = 2; };
 		FB3FD7F41E777AD60004C49E /* LIMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LIMapViewController.swift; sourceTree = "<group>"; };
 		FB3FD7F51E777AD60004C49E /* LIMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LIMapViewController.xib; sourceTree = "<group>"; };
 		FB3FD7FA1E7780660004C49E /* LIVenue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LIVenue.swift; sourceTree = "<group>"; };
@@ -116,6 +120,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FB1515721E7F080F0006C046 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FB1515741E7F08EC0006C046 /* NSObject.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		FB1515731E7F08280006C046 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FB966F8C1E75BAE200842CB8 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		FB3FD7F11E777A5D0004C49E /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +164,7 @@
 		FB3FD7F91E7780010004C49E /* API Requests */ = {
 			isa = PBXGroup;
 			children = (
+				FB265AD21E78BF6A0056015B /* LIAPIRequest.swift */,
 				FB3FD7FC1E7784790004C49E /* LIVenuesRequest.swift */,
 			);
 			name = "API Requests";
@@ -176,10 +197,11 @@
 			children = (
 				FB3FD7F91E7780010004C49E /* API Requests */,
 				FB966F821E75BAE200842CB8 /* AppDelegate.swift */,
-				FB966F8C1E75BAE200842CB8 /* Assets.xcassets */,
+				FB1515721E7F080F0006C046 /* Extension */,
 				FB966F911E75BAE200842CB8 /* Info.plist */,
 				FB3FD7F81E777F160004C49E /* Models */,
 				FB3FD7F21E777A6A0004C49E /* Nibs */,
+				FB1515731E7F08280006C046 /* Resources */,
 				FB3FD7F11E777A5D0004C49E /* View Controllers */,
 			);
 			path = "LI Thirst";
@@ -488,7 +510,9 @@
 				FB3FD7FD1E7784790004C49E /* LIVenuesRequest.swift in Sources */,
 				FB3FD7FB1E7780660004C49E /* LIVenue.swift in Sources */,
 				FB3FD7F61E777AD60004C49E /* LIMapViewController.swift in Sources */,
+				FB1515751E7F08EC0006C046 /* NSObject.swift in Sources */,
 				FB966F831E75BAE200842CB8 /* AppDelegate.swift in Sources */,
+				FB265AD31E78BF6A0056015B /* LIAPIRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

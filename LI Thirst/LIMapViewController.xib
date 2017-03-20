@@ -10,15 +10,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LIMapViewController" customModule="LI_Thirst" customModuleProvider="target">
             <connections>
-                <outlet property="contentViewContainer" destination="xYU-qw-DXt" id="SWV-kl-9M8"/>
-                <outlet property="searchBar" destination="Jhe-42-TWa" id="lGZ-XT-lbr"/>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="contentView" destination="xYU-qw-DXt" id="iXI-1q-wRO"/>
+                <outlet property="searchBar" destination="Jhe-42-TWa" id="W0X-rG-yJH"/>
+                <outlet property="view" destination="FjE-Wg-cgf" id="xV9-7N-0NS"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view contentMode="scaleToFill" id="FjE-Wg-cgf">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Jhe-42-TWa">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -29,17 +29,17 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="Jhe-42-TWa" secondAttribute="trailing" id="3zG-QU-vH4"/>
-                <constraint firstItem="Jhe-42-TWa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="M5d-sH-Axc"/>
-                <constraint firstItem="xYU-qw-DXt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="P6Y-gr-Bau"/>
-                <constraint firstAttribute="bottom" secondItem="xYU-qw-DXt" secondAttribute="bottom" id="VfG-Ed-CC9"/>
-                <constraint firstAttribute="trailing" secondItem="xYU-qw-DXt" secondAttribute="trailing" id="Wca-Xk-rVp"/>
-                <constraint firstItem="Jhe-42-TWa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="bnI-FJ-qzj"/>
-                <constraint firstItem="xYU-qw-DXt" firstAttribute="top" secondItem="Jhe-42-TWa" secondAttribute="bottom" id="dKx-vA-8ci"/>
+                <constraint firstItem="xYU-qw-DXt" firstAttribute="top" secondItem="Jhe-42-TWa" secondAttribute="bottom" id="0MB-VM-SSt"/>
+                <constraint firstAttribute="bottom" secondItem="xYU-qw-DXt" secondAttribute="bottom" id="8k0-ny-OeK"/>
+                <constraint firstItem="Jhe-42-TWa" firstAttribute="leading" secondItem="FjE-Wg-cgf" secondAttribute="leading" id="Ese-CK-ynV"/>
+                <constraint firstAttribute="trailing" secondItem="xYU-qw-DXt" secondAttribute="trailing" id="NB3-jW-vcE"/>
+                <constraint firstAttribute="trailing" secondItem="Jhe-42-TWa" secondAttribute="trailing" id="RCh-E0-oGz"/>
+                <constraint firstItem="xYU-qw-DXt" firstAttribute="leading" secondItem="FjE-Wg-cgf" secondAttribute="leading" id="TyB-1o-gJN"/>
+                <constraint firstItem="Jhe-42-TWa" firstAttribute="top" secondItem="FjE-Wg-cgf" secondAttribute="top" id="f09-GK-bhV"/>
             </constraints>
-            <point key="canvasLocation" x="131.5" y="75.5"/>
+            <point key="canvasLocation" x="-612.5" y="-262.5"/>
         </view>
     </objects>
 </document>
