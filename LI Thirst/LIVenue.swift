@@ -1,23 +1,23 @@
 import Foundation
+import ObjectMapper
 
-struct LIVenue {
+class LIVenue : Mappable {
     
-  var address : String
-  var latitude : Double
-  var longitude : Double
-  var name : String
-  var venueID : NSNumber
+  var address : String?
+  var latitude : Double?
+  var longitude : Double?
+  var name : String?
+  var venueID : NSNumber?
 
-  init(address: String,
-       latitude: Double,
-       longitude: Double,
-       name: String,
-       venueID: NSNumber) {
+  required init?(map: Map) {
     
-    self.address = address
-    self.latitude = latitude
-    self.longitude = longitude
-    self.name = name
-    self.venueID = venueID
+  }
+  
+  func mapping(map: Map) {
+    address   <- map["address"]
+    latitude  <- (map["latitude"],TransformOf<Double, NSNumber>)
+    longitude <- map["longitude"]
+    name      <- map["name"]
+    venueID   <- map["venue_id"]
   }
 }

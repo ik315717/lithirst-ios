@@ -1,8 +1,9 @@
 import Alamofire
 import Foundation
+import ObjectMapper
 
 class LIVenuesRequest {
-  public func getVenues(webResponse: @escaping (Array<LIVenue>) -> Void) {
+  public func getVenues(venues: @escaping (Array<LIVenue>) -> Void) {
     let venuesAPIRequest = LIAPIRequestPHP()
     venuesAPIRequest.request(methodType: .get,
                              path: "/specials-app/",
@@ -10,16 +11,22 @@ class LIVenuesRequest {
                              success: { response in
                               if let dataResponse = response {
                               venuesAPIRequest.serializeJSON(response: dataResponse, rootkey: "venues", data: { venueList in
-                                if venueList.count > 0 {
+                                var venueListWithObjects : Array<LIVenue> = []
+                                for venue in venueList {
+                                  let venueModel = Mapper<LIVenue>().map(JSONObject: venue)
                                   
+                                  if let venueObject = venueModel {
+                                    venueListWithObjects.append(venueObject)
+                                  }
                                 }
+                                
+                                venues(venueListWithObjects)
                               })
                               }
                              },
                              failure: {error in
                               print(error.localizedDescription)
                              })
-
   }
 }
 

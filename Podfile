@@ -3,6 +3,7 @@ use_frameworks!
 target 'LI Thirst' do
 
 pod 'Alamofire', '~> 4.4'
+pod 'ObjectMapper'
 
 end
 
