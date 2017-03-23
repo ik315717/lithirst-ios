@@ -16,6 +16,7 @@
 		FB3FD7F71E777AD60004C49E /* LIMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB3FD7F51E777AD60004C49E /* LIMapViewController.xib */; };
 		FB3FD7FB1E7780660004C49E /* LIVenue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FD7FA1E7780660004C49E /* LIVenue.swift */; };
 		FB3FD7FD1E7784790004C49E /* LIVenuesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FD7FC1E7784790004C49E /* LIVenuesRequest.swift */; };
+		FB81B9CB1E835A67009CF259 /* LICustomMapTransforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB81B9CA1E835A67009CF259 /* LICustomMapTransforms.swift */; };
 		FB966F831E75BAE200842CB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB966F821E75BAE200842CB8 /* AppDelegate.swift */; };
 		FB966F8D1E75BAE200842CB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB966F8C1E75BAE200842CB8 /* Assets.xcassets */; };
 		FB966F901E75BAE200842CB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB966F8E1E75BAE200842CB8 /* LaunchScreen.storyboard */; };
@@ -56,6 +57,7 @@
 		FB3FD7F51E777AD60004C49E /* LIMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LIMapViewController.xib; sourceTree = "<group>"; };
 		FB3FD7FA1E7780660004C49E /* LIVenue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LIVenue.swift; sourceTree = "<group>"; };
 		FB3FD7FC1E7784790004C49E /* LIVenuesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LIVenuesRequest.swift; sourceTree = "<group>"; };
+		FB81B9CA1E835A67009CF259 /* LICustomMapTransforms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LICustomMapTransforms.swift; sourceTree = "<group>"; };
 		FB966F7F1E75BAE200842CB8 /* LI Thirst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LI Thirst.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB966F821E75BAE200842CB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB966F8C1E75BAE200842CB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 		FB3FD7F81E777F160004C49E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FB81B9C91E835A40009CF259 /* Mapper Transforms */,
 				FB3FD7FA1E7780660004C49E /* LIVenue.swift */,
 			);
 			name = Models;
@@ -168,6 +171,14 @@
 				FB3FD7FC1E7784790004C49E /* LIVenuesRequest.swift */,
 			);
 			name = "API Requests";
+			sourceTree = "<group>";
+		};
+		FB81B9C91E835A40009CF259 /* Mapper Transforms */ = {
+			isa = PBXGroup;
+			children = (
+				FB81B9CA1E835A67009CF259 /* LICustomMapTransforms.swift */,
+			);
+			name = "Mapper Transforms";
 			sourceTree = "<group>";
 		};
 		FB966F761E75BAE100842CB8 = {
@@ -513,6 +524,7 @@
 				FB1515751E7F08EC0006C046 /* NSObject.swift in Sources */,
 				FB966F831E75BAE200842CB8 /* AppDelegate.swift in Sources */,
 				FB265AD31E78BF6A0056015B /* LIAPIRequest.swift in Sources */,
+				FB81B9CB1E835A67009CF259 /* LICustomMapTransforms.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
