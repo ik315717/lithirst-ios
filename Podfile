@@ -1,17 +1,23 @@
 use_frameworks!
+platform :ios, '9.0'
+
+def shared_pods
+  pod 'Alamofire', '~> 4.4'
+  pod 'ObjectMapper'
+  pod 'Nimble'
+  pod 'Quick'
+end
 
 target 'LI Thirst' do
-
-pod 'Alamofire', '~> 4.4'
-pod 'ObjectMapper'
-
+  shared_pods
 end
 
-target 'LI ThirstTests' do
-
+target 'Unit Tests' do
+ inherit! :search_paths
+ shared_pods
 end
 
-target 'LI ThirstUITests' do
-
+target 'UI Tests' do
+  shared_pods
 end
 
