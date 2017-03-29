@@ -1,16 +1,9 @@
 import Alamofire
 import Foundation
 
-class LIAPIRequestPHP {
+class LIAPIRequest {
   let baseURL = "http://ianlindsaykennedy.com"
   var url : String = ""
-    
-  public func makeAPIrequest(methodType : HTTPMethod,
-                             path : String,
-                             phpFile : String,
-                             urlCompletionHandler: @escaping (DataResponse<Any>) -> Void) {
-
-  }
   
   func request(methodType:HTTPMethod,
                path: String,

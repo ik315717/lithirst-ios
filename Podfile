@@ -12,12 +12,18 @@ target 'LI Thirst' do
   shared_pods
 end
 
+target 'Testing App' do
+  shared_pods
+  pod 'Mockingjay'
+end
+
 target 'Unit Tests' do
- inherit! :search_paths
  shared_pods
+ pod 'Mockingjay'
 end
 
 target 'UI Tests' do
   shared_pods
+  pod 'Mockingjay'
 end
 

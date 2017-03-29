@@ -4,7 +4,7 @@ import ObjectMapper
 
 class LIVenuesRequest {
   public func getVenues(venues: @escaping (Array<LIVenue>) -> Void) {
-    let venuesAPIRequest = LIAPIRequestPHP()
+    let venuesAPIRequest = LIAPIRequest()
     venuesAPIRequest.request(methodType: .get,
                              path: "/specials-app/",
                              phpFile: "get_venues.php",

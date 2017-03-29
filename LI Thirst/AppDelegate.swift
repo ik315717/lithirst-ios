@@ -5,7 +5,13 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
-
+  var testingApp : Bool {
+    #if DEVELOPMENT
+      return true
+    #else
+      return false
+    #endif
+  }
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions
     launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -13,7 +19,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       let mapViewController = LIMapViewController(nibName: LIMapViewController.className, bundle: nil)
       self.window?.rootViewController = UINavigationController(rootViewController: mapViewController)
       self.window?.makeKeyAndVisible()
-      
+    
+    //Add API Stubbing
+    if testingApp {
+      let body = [ "description": "Kyle" ]
+      stub(http(.PUT, "/kylef/Mockingjay"), json(body))
+    }
+    
       return true
   }
 
