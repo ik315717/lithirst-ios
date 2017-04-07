@@ -2,7 +2,8 @@ import Alamofire
 import Foundation
 
 class LIAPIRequest {
-  let baseURL = "http://ianlindsaykennedy.com"
+  static let baseURL: String = "http://ianlindsaykennedy.com"
+  static let host: String = "ianlindsaykennedy.com"
   var url : String = ""
   
   func request(methodType:HTTPMethod,
@@ -11,7 +12,7 @@ class LIAPIRequest {
                success: @escaping((_ response: DataResponse<Any>?) -> ()),
                failure: @escaping ((_ error: Error) -> ())) {
     if methodType == .get {
-      self.url = baseURL + path + phpFile
+      self.url = LIAPIRequest.baseURL + path + phpFile
       Alamofire.request(url).responseJSON { response in
         if let error = response.error {
           failure(error)

@@ -3,9 +3,11 @@ platform :ios, '9.0'
 
 def shared_pods
   pod 'Alamofire', '~> 4.4'
-  pod 'ObjectMapper'
   pod 'Nimble'
+  pod 'ObjectMapper'
+  pod 'OHHTTPStubs/Swift'
   pod 'Quick'
+  pod 'SwiftyJSON'
 end
 
 target 'LI Thirst' do
@@ -14,16 +16,13 @@ end
 
 target 'Testing App' do
   shared_pods
-  pod 'Mockingjay'
 end
 
 target 'Unit Tests' do
  shared_pods
- pod 'Mockingjay'
 end
 
 target 'UI Tests' do
   shared_pods
-  pod 'Mockingjay'
 end
 

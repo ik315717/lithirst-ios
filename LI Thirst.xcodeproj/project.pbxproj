@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5F8A22DE11AD7CFD35FE4D6F /* Pods_UI_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4414FD749241A64D0E2D578A /* Pods_UI_Tests.framework */; };
-		7CA2C45B58091A9710DE3CEA /* Pods_Testing_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8F804297CBDD2B3F5ED79BC /* Pods_Testing_App.framework */; };
-		B0D13CEF5373A5A300A8D5E4 /* Pods_Unit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 912965F87319402EC8F40105 /* Pods_Unit_Tests.framework */; };
-		F5ACA79388B724CA177B7B68 /* Pods_LI_Thirst.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2284234958F4A73DD2E60675 /* Pods_LI_Thirst.framework */; };
+		063C6BBAAC82B4BC12B73CAF /* Pods_Testing_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F523021A7B13BEF4BE1D2017 /* Pods_Testing_App.framework */; };
+		07906407C61B2EC805DA7CD1 /* Pods_Unit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F2887F33F92A3B1C4805E90 /* Pods_Unit_Tests.framework */; };
+		789E6418F1EF133C82986BB2 /* Pods_UI_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6D7359A5B4C1A4500C7093 /* Pods_UI_Tests.framework */; };
+		98BDEE8C571B7BE8657A3AB7 /* Pods_LI_Thirst.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42BB8A2A9DC255EEDB0C150F /* Pods_LI_Thirst.framework */; };
 		FB1515751E7F08EC0006C046 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1515741E7F08EC0006C046 /* NSObject.swift */; };
 		FB265AD31E78BF6A0056015B /* LIAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB265AD21E78BF6A0056015B /* LIAPIRequest.swift */; };
 		FB3FD7F61E777AD60004C49E /* LIMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FD7F41E777AD60004C49E /* LIMapViewController.swift */; };
@@ -18,13 +18,18 @@
 		FB3FD7FB1E7780660004C49E /* LIVenue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FD7FA1E7780660004C49E /* LIVenue.swift */; };
 		FB3FD7FD1E7784790004C49E /* LIVenuesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FD7FC1E7784790004C49E /* LIVenuesRequest.swift */; };
 		FB6AD9971E870CD600A3148E /* Pods_LI_Thirst.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6AD9961E870CD600A3148E /* Pods_LI_Thirst.framework */; };
-		FB6AD9A01E87133400A3148E /* Pods_Unit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6AD99F1E87133400A3148E /* Pods_Unit_Tests.framework */; };
 		FB81B9CB1E835A67009CF259 /* LICustomMapTransforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB81B9CA1E835A67009CF259 /* LICustomMapTransforms.swift */; };
 		FB966F831E75BAE200842CB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB966F821E75BAE200842CB8 /* AppDelegate.swift */; };
 		FB966F8D1E75BAE200842CB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB966F8C1E75BAE200842CB8 /* Assets.xcassets */; };
 		FB966F901E75BAE200842CB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB966F8E1E75BAE200842CB8 /* LaunchScreen.storyboard */; };
 		FB966FA61E75BAE200842CB8 /* LI_ThirstUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB966FA51E75BAE200842CB8 /* LI_ThirstUITests.swift */; };
 		FBBC05A61E870946008B4C8C /* NSObjectSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9C3A4B1E87031F00882902 /* NSObjectSpec.swift */; };
+		FBE4709A1E8C6F490014E8C4 /* LIVenueFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE470991E8C6F490014E8C4 /* LIVenueFixture.swift */; };
+		FBE4709D1E8C73810014E8C4 /* LIVenue.json in Resources */ = {isa = PBXBuildFile; fileRef = FBE4709C1E8C73810014E8C4 /* LIVenue.json */; };
+		FBE4709E1E8C73810014E8C4 /* LIVenue.json in Resources */ = {isa = PBXBuildFile; fileRef = FBE4709C1E8C73810014E8C4 /* LIVenue.json */; };
+		FBE4709F1E8C73810014E8C4 /* LIVenue.json in Resources */ = {isa = PBXBuildFile; fileRef = FBE4709C1E8C73810014E8C4 /* LIVenue.json */; };
+		FBE470A11E971C4A0014E8C4 /* LIVenueWebResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = FBE470A01E971C4A0014E8C4 /* LIVenueWebResponse.json */; };
+		FBE470A21E971E2A0014E8C4 /* LIVenueWebResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = FBE470A01E971C4A0014E8C4 /* LIVenueWebResponse.json */; };
 		FBF4BFA91E87186700D3E9B9 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF4BFA81E87186700D3E9B9 /* Quick.framework */; };
 		FBF4BFAB1E8718B900D3E9B9 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF4BFAA1E8718B900D3E9B9 /* Nimble.framework */; };
 		FBF4BFAC1E871B8800D3E9B9 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1515741E7F08EC0006C046 /* NSObject.swift */; };
@@ -80,22 +85,20 @@
 /* Begin PBXFileReference section */
 		16D8EE737039431FB4655F1E /* Pods-LI Thirst.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LI Thirst.release.xcconfig"; path = "Pods/Target Support Files/Pods-LI Thirst/Pods-LI Thirst.release.xcconfig"; sourceTree = "<group>"; };
 		1A345CBB86EAC440800E347B /* Pods-Unit Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Unit Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Unit Tests/Pods-Unit Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		2284234958F4A73DD2E60675 /* Pods_LI_Thirst.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LI_Thirst.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BD4246A7DD6BECC0F0A934F /* Pods_LI_ThirstUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LI_ThirstUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E8A401164C968968EA31C2A /* Pods-LI ThirstUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LI ThirstUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LI ThirstUITests/Pods-LI ThirstUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F2887F33F92A3B1C4805E90 /* Pods_Unit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Unit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		429F4CEE502921358771612C /* Pods-LI Thirst.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LI Thirst.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LI Thirst/Pods-LI Thirst.debug.xcconfig"; sourceTree = "<group>"; };
-		4414FD749241A64D0E2D578A /* Pods_UI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42BB8A2A9DC255EEDB0C150F /* Pods_LI_Thirst.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LI_Thirst.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C8974A93D23CC5EC4410EAB /* Pods-LI ThirstTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LI ThirstTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LI ThirstTests/Pods-LI ThirstTests.release.xcconfig"; sourceTree = "<group>"; };
 		74A41044BA8AAB3FF8E67D66 /* Pods-Testing App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Testing App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Testing App/Pods-Testing App.debug.xcconfig"; sourceTree = "<group>"; };
 		756E5F91770F1CD3535A1F45 /* Pods-LI ThirstTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LI ThirstTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LI ThirstTests/Pods-LI ThirstTests.debug.xcconfig"; sourceTree = "<group>"; };
 		75DD89E3E19345E7D3AA44A5 /* Pods-UI Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UI Tests/Pods-UI Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7E9E214CCF7772801C136AA8 /* Pods-LI ThirstUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LI ThirstUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LI ThirstUITests/Pods-LI ThirstUITests.release.xcconfig"; sourceTree = "<group>"; };
-		819BB570D3D406562F1EED1C /* Pods_LI_ThirstTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LI_ThirstTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		912965F87319402EC8F40105 /* Pods_Unit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Unit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD8FBA8A5EB270670298318 /* Pods-Unit Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Unit Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Unit Tests/Pods-Unit Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C8F804297CBDD2B3F5ED79BC /* Pods_Testing_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Testing_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE6D7359A5B4C1A4500C7093 /* Pods_UI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D457A1FAB35588E9058D7921 /* Pods-Testing App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Testing App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Testing App/Pods-Testing App.release.xcconfig"; sourceTree = "<group>"; };
 		DB64DDEEF7EF0F3D611796B0 /* Pods-UI Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UI Tests/Pods-UI Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F523021A7B13BEF4BE1D2017 /* Pods_Testing_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Testing_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB1515741E7F08EC0006C046 /* NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
 		FB265AD21E78BF6A0056015B /* LIAPIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = LIAPIRequest.swift; sourceTree = "<group>"; tabWidth = 2; };
 		FB3FD7F41E777AD60004C49E /* LIMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LIMapViewController.swift; sourceTree = "<group>"; };
@@ -105,8 +108,6 @@
 		FB6AD9961E870CD600A3148E /* Pods_LI_Thirst.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_LI_Thirst.framework; path = "../../Library/Developer/Xcode/DerivedData/LI_Thirst-dxmiqpnksxhgmpcyloctfnlcdzfy/Build/Products/Debug-iphonesimulator/Pods_LI_Thirst.framework"; sourceTree = "<group>"; };
 		FB6AD9991E87121400A3148E /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "../../Library/Developer/Xcode/DerivedData/LI_Thirst-dxmiqpnksxhgmpcyloctfnlcdzfy/Build/Products/Debug-iphonesimulator/Quick-iOS9.0/Quick.framework"; sourceTree = "<group>"; };
 		FB6AD99B1E87121E00A3148E /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "../../Library/Developer/Xcode/DerivedData/LI_Thirst-dxmiqpnksxhgmpcyloctfnlcdzfy/Build/Products/Debug-iphonesimulator/Nimble-iOS9.0/Nimble.framework"; sourceTree = "<group>"; };
-		FB6AD99D1E87132A00A3148E /* Pods_UI_Tests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_UI_Tests.framework; path = "Pods/../build/Debug-iphoneos/Pods_UI_Tests.framework"; sourceTree = "<group>"; };
-		FB6AD99F1E87133400A3148E /* Pods_Unit_Tests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Unit_Tests.framework; path = "Pods/../build/Debug-iphoneos/Pods_Unit_Tests.framework"; sourceTree = "<group>"; };
 		FB81B9CA1E835A67009CF259 /* LICustomMapTransforms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LICustomMapTransforms.swift; sourceTree = "<group>"; };
 		FB966F7F1E75BAE200842CB8 /* LI Thirst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LI Thirst.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB966F821E75BAE200842CB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +119,9 @@
 		FB966FA51E75BAE200842CB8 /* LI_ThirstUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LI_ThirstUITests.swift; sourceTree = "<group>"; };
 		FB966FA71E75BAE200842CB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB9C3A4B1E87031F00882902 /* NSObjectSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectSpec.swift; sourceTree = "<group>"; };
+		FBE470991E8C6F490014E8C4 /* LIVenueFixture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LIVenueFixture.swift; sourceTree = "<group>"; };
+		FBE4709C1E8C73810014E8C4 /* LIVenue.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LIVenue.json; sourceTree = "<group>"; };
+		FBE470A01E971C4A0014E8C4 /* LIVenueWebResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LIVenueWebResponse.json; sourceTree = "<group>"; };
 		FBF4BFA81E87186700D3E9B9 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "../../Library/Developer/Xcode/DerivedData/LI_Thirst-dxmiqpnksxhgmpcyloctfnlcdzfy/Build/Products/Debug-iphonesimulator/Quick/Quick.framework"; sourceTree = "<group>"; };
 		FBF4BFAA1E8718B900D3E9B9 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "../../Library/Developer/Xcode/DerivedData/LI_Thirst-dxmiqpnksxhgmpcyloctfnlcdzfy/Build/Products/Debug-iphonesimulator/Nimble/Nimble.framework"; sourceTree = "<group>"; };
 		FBF4BFAD1E88195B00D3E9B9 /* LIVenueSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LIVenueSpec.swift; sourceTree = "<group>"; };
@@ -133,7 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB6AD9971E870CD600A3148E /* Pods_LI_Thirst.framework in Frameworks */,
-				F5ACA79388B724CA177B7B68 /* Pods_LI_Thirst.framework in Frameworks */,
+				98BDEE8C571B7BE8657A3AB7 /* Pods_LI_Thirst.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,8 +147,7 @@
 			files = (
 				FBF4BFAB1E8718B900D3E9B9 /* Nimble.framework in Frameworks */,
 				FBF4BFA91E87186700D3E9B9 /* Quick.framework in Frameworks */,
-				FB6AD9A01E87133400A3148E /* Pods_Unit_Tests.framework in Frameworks */,
-				B0D13CEF5373A5A300A8D5E4 /* Pods_Unit_Tests.framework in Frameworks */,
+				07906407C61B2EC805DA7CD1 /* Pods_Unit_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F8A22DE11AD7CFD35FE4D6F /* Pods_UI_Tests.framework in Frameworks */,
+				789E6418F1EF133C82986BB2 /* Pods_UI_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,7 +163,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CA2C45B58091A9710DE3CEA /* Pods_Testing_App.framework in Frameworks */,
+				063C6BBAAC82B4BC12B73CAF /* Pods_Testing_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,17 +175,13 @@
 			children = (
 				FBF4BFAA1E8718B900D3E9B9 /* Nimble.framework */,
 				FBF4BFA81E87186700D3E9B9 /* Quick.framework */,
-				FB6AD99F1E87133400A3148E /* Pods_Unit_Tests.framework */,
-				FB6AD99D1E87132A00A3148E /* Pods_UI_Tests.framework */,
 				FB6AD99B1E87121E00A3148E /* Nimble.framework */,
 				FB6AD9991E87121400A3148E /* Quick.framework */,
 				FB6AD9961E870CD600A3148E /* Pods_LI_Thirst.framework */,
-				2284234958F4A73DD2E60675 /* Pods_LI_Thirst.framework */,
-				819BB570D3D406562F1EED1C /* Pods_LI_ThirstTests.framework */,
-				3BD4246A7DD6BECC0F0A934F /* Pods_LI_ThirstUITests.framework */,
-				4414FD749241A64D0E2D578A /* Pods_UI_Tests.framework */,
-				912965F87319402EC8F40105 /* Pods_Unit_Tests.framework */,
-				C8F804297CBDD2B3F5ED79BC /* Pods_Testing_App.framework */,
+				42BB8A2A9DC255EEDB0C150F /* Pods_LI_Thirst.framework */,
+				F523021A7B13BEF4BE1D2017 /* Pods_Testing_App.framework */,
+				CE6D7359A5B4C1A4500C7093 /* Pods_UI_Tests.framework */,
+				3F2887F33F92A3B1C4805E90 /* Pods_Unit_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -332,6 +331,24 @@
 			path = "LI ThirstUITests";
 			sourceTree = "<group>";
 		};
+		FBE470981E8C6E880014E8C4 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				FBE4709B1E8C72780014E8C4 /* JSON Stubbings */,
+				FBE470991E8C6F490014E8C4 /* LIVenueFixture.swift */,
+			);
+			name = Fixtures;
+			sourceTree = "<group>";
+		};
+		FBE4709B1E8C72780014E8C4 /* JSON Stubbings */ = {
+			isa = PBXGroup;
+			children = (
+				FBE470A01E971C4A0014E8C4 /* LIVenueWebResponse.json */,
+				FBE4709C1E8C73810014E8C4 /* LIVenue.json */,
+			);
+			name = "JSON Stubbings";
+			sourceTree = "<group>";
+		};
 		FBF4BFB31E88275800D3E9B9 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -345,6 +362,7 @@
 		FBF4BFB71E883B2300D3E9B9 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				FBE470981E8C6E880014E8C4 /* Fixtures */,
 				FB966F911E75BAE200842CB8 /* Info.plist */,
 			);
 			name = "Support Files";
@@ -494,6 +512,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBE470A11E971C4A0014E8C4 /* LIVenueWebResponse.json in Resources */,
 				FB966F901E75BAE200842CB8 /* LaunchScreen.storyboard in Resources */,
 				FB3FD7F71E777AD60004C49E /* LIMapViewController.xib in Resources */,
 				FB966F8D1E75BAE200842CB8 /* Assets.xcassets in Resources */,
@@ -504,6 +523,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBE4709E1E8C73810014E8C4 /* LIVenue.json in Resources */,
 				FBF4BFB11E881C4600D3E9B9 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,6 +532,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBE4709F1E8C73810014E8C4 /* LIVenue.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,8 +540,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBE470A21E971E2A0014E8C4 /* LIVenueWebResponse.json in Resources */,
 				FBF4BFC61E883C0100D3E9B9 /* LaunchScreen.storyboard in Resources */,
 				FBF4BFC71E883C0100D3E9B9 /* LIMapViewController.xib in Resources */,
+				FBE4709D1E8C73810014E8C4 /* LIVenue.json in Resources */,
 				FBF4BFC81E883C0100D3E9B9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -757,6 +780,7 @@
 				FBF4BFBE1E883C0100D3E9B9 /* NSObject.swift in Sources */,
 				FBF4BFBF1E883C0100D3E9B9 /* AppDelegate.swift in Sources */,
 				FBF4BFC01E883C0100D3E9B9 /* LIAPIRequest.swift in Sources */,
+				FBE4709A1E8C6F490014E8C4 /* LIVenueFixture.swift in Sources */,
 				FBF4BFC11E883C0100D3E9B9 /* LICustomMapTransforms.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
