@@ -25,11 +25,10 @@
 		FB966FA61E75BAE200842CB8 /* LI_ThirstUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB966FA51E75BAE200842CB8 /* LI_ThirstUITests.swift */; };
 		FBBC05A61E870946008B4C8C /* NSObjectSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9C3A4B1E87031F00882902 /* NSObjectSpec.swift */; };
 		FBE4709A1E8C6F490014E8C4 /* LIVenueFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE470991E8C6F490014E8C4 /* LIVenueFixture.swift */; };
-		FBE4709D1E8C73810014E8C4 /* LIVenue.json in Resources */ = {isa = PBXBuildFile; fileRef = FBE4709C1E8C73810014E8C4 /* LIVenue.json */; };
-		FBE4709E1E8C73810014E8C4 /* LIVenue.json in Resources */ = {isa = PBXBuildFile; fileRef = FBE4709C1E8C73810014E8C4 /* LIVenue.json */; };
-		FBE4709F1E8C73810014E8C4 /* LIVenue.json in Resources */ = {isa = PBXBuildFile; fileRef = FBE4709C1E8C73810014E8C4 /* LIVenue.json */; };
 		FBE470A11E971C4A0014E8C4 /* LIVenueWebResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = FBE470A01E971C4A0014E8C4 /* LIVenueWebResponse.json */; };
 		FBE470A21E971E2A0014E8C4 /* LIVenueWebResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = FBE470A01E971C4A0014E8C4 /* LIVenueWebResponse.json */; };
+		FBE470A41E972EE20014E8C4 /* LIVenue.json in Resources */ = {isa = PBXBuildFile; fileRef = FBE470A31E972EE20014E8C4 /* LIVenue.json */; };
+		FBE470A51E972EF30014E8C4 /* LIVenue.json in Resources */ = {isa = PBXBuildFile; fileRef = FBE470A31E972EE20014E8C4 /* LIVenue.json */; };
 		FBF4BFA91E87186700D3E9B9 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF4BFA81E87186700D3E9B9 /* Quick.framework */; };
 		FBF4BFAB1E8718B900D3E9B9 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF4BFAA1E8718B900D3E9B9 /* Nimble.framework */; };
 		FBF4BFAC1E871B8800D3E9B9 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1515741E7F08EC0006C046 /* NSObject.swift */; };
@@ -120,8 +119,8 @@
 		FB966FA71E75BAE200842CB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB9C3A4B1E87031F00882902 /* NSObjectSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectSpec.swift; sourceTree = "<group>"; };
 		FBE470991E8C6F490014E8C4 /* LIVenueFixture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LIVenueFixture.swift; sourceTree = "<group>"; };
-		FBE4709C1E8C73810014E8C4 /* LIVenue.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LIVenue.json; sourceTree = "<group>"; };
 		FBE470A01E971C4A0014E8C4 /* LIVenueWebResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LIVenueWebResponse.json; sourceTree = "<group>"; };
+		FBE470A31E972EE20014E8C4 /* LIVenue.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LIVenue.json; sourceTree = "<group>"; };
 		FBF4BFA81E87186700D3E9B9 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "../../Library/Developer/Xcode/DerivedData/LI_Thirst-dxmiqpnksxhgmpcyloctfnlcdzfy/Build/Products/Debug-iphonesimulator/Quick/Quick.framework"; sourceTree = "<group>"; };
 		FBF4BFAA1E8718B900D3E9B9 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "../../Library/Developer/Xcode/DerivedData/LI_Thirst-dxmiqpnksxhgmpcyloctfnlcdzfy/Build/Products/Debug-iphonesimulator/Nimble/Nimble.framework"; sourceTree = "<group>"; };
 		FBF4BFAD1E88195B00D3E9B9 /* LIVenueSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LIVenueSpec.swift; sourceTree = "<group>"; };
@@ -344,7 +343,7 @@
 			isa = PBXGroup;
 			children = (
 				FBE470A01E971C4A0014E8C4 /* LIVenueWebResponse.json */,
-				FBE4709C1E8C73810014E8C4 /* LIVenue.json */,
+				FBE470A31E972EE20014E8C4 /* LIVenue.json */,
 			);
 			name = "JSON Stubbings";
 			sourceTree = "<group>";
@@ -512,6 +511,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBE470A41E972EE20014E8C4 /* LIVenue.json in Resources */,
 				FBE470A11E971C4A0014E8C4 /* LIVenueWebResponse.json in Resources */,
 				FB966F901E75BAE200842CB8 /* LaunchScreen.storyboard in Resources */,
 				FB3FD7F71E777AD60004C49E /* LIMapViewController.xib in Resources */,
@@ -523,7 +523,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBE4709E1E8C73810014E8C4 /* LIVenue.json in Resources */,
 				FBF4BFB11E881C4600D3E9B9 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -532,7 +531,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBE4709F1E8C73810014E8C4 /* LIVenue.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,10 +538,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBE470A51E972EF30014E8C4 /* LIVenue.json in Resources */,
 				FBE470A21E971E2A0014E8C4 /* LIVenueWebResponse.json in Resources */,
 				FBF4BFC61E883C0100D3E9B9 /* LaunchScreen.storyboard in Resources */,
 				FBF4BFC71E883C0100D3E9B9 /* LIMapViewController.xib in Resources */,
-				FBE4709D1E8C73810014E8C4 /* LIVenue.json in Resources */,
 				FBF4BFC81E883C0100D3E9B9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
