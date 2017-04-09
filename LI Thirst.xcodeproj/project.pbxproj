@@ -10,7 +10,7 @@
 		063C6BBAAC82B4BC12B73CAF /* Pods_Testing_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F523021A7B13BEF4BE1D2017 /* Pods_Testing_App.framework */; };
 		07906407C61B2EC805DA7CD1 /* Pods_Unit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F2887F33F92A3B1C4805E90 /* Pods_Unit_Tests.framework */; };
 		789E6418F1EF133C82986BB2 /* Pods_UI_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6D7359A5B4C1A4500C7093 /* Pods_UI_Tests.framework */; };
-		98BDEE8C571B7BE8657A3AB7 /* Pods_LI_Thirst.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42BB8A2A9DC255EEDB0C150F /* Pods_LI_Thirst.framework */; };
+		94C9AF86BE95653DB005897D /* Pods_LI_Thirst.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42BB8A2A9DC255EEDB0C150F /* Pods_LI_Thirst.framework */; };
 		FB1515751E7F08EC0006C046 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1515741E7F08EC0006C046 /* NSObject.swift */; };
 		FB265AD31E78BF6A0056015B /* LIAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB265AD21E78BF6A0056015B /* LIAPIRequest.swift */; };
 		FB3FD7F71E777AD60004C49E /* LIMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB3FD7F51E777AD60004C49E /* LIMapViewController.xib */; };
@@ -32,6 +32,8 @@
 		FB966F901E75BAE200842CB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB966F8E1E75BAE200842CB8 /* LaunchScreen.storyboard */; };
 		FB966FA61E75BAE200842CB8 /* LI_ThirstUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB966FA51E75BAE200842CB8 /* LI_ThirstUITests.swift */; };
 		FBBC05A61E870946008B4C8C /* NSObjectSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9C3A4B1E87031F00882902 /* NSObjectSpec.swift */; };
+		FBCD33AA1E99B3BF004E7897 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCD33A91E99B3BF004E7897 /* Array.swift */; };
+		FBCD33AB1E99B3BF004E7897 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCD33A91E99B3BF004E7897 /* Array.swift */; };
 		FBE4709A1E8C6F490014E8C4 /* LIVenueFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE470991E8C6F490014E8C4 /* LIVenueFixture.swift */; };
 		FBE470A11E971C4A0014E8C4 /* LIVenueWebResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = FBE470A01E971C4A0014E8C4 /* LIVenueWebResponse.json */; };
 		FBE470A21E971E2A0014E8C4 /* LIVenueWebResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = FBE470A01E971C4A0014E8C4 /* LIVenueWebResponse.json */; };
@@ -124,6 +126,7 @@
 		FB966FA51E75BAE200842CB8 /* LI_ThirstUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LI_ThirstUITests.swift; sourceTree = "<group>"; };
 		FB966FA71E75BAE200842CB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB9C3A4B1E87031F00882902 /* NSObjectSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectSpec.swift; sourceTree = "<group>"; };
+		FBCD33A91E99B3BF004E7897 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		FBE470991E8C6F490014E8C4 /* LIVenueFixture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LIVenueFixture.swift; sourceTree = "<group>"; };
 		FBE470A01E971C4A0014E8C4 /* LIVenueWebResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LIVenueWebResponse.json; sourceTree = "<group>"; };
 		FBE470A31E972EE20014E8C4 /* LIVenue.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LIVenue.json; sourceTree = "<group>"; };
@@ -142,7 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB6AD9971E870CD600A3148E /* Pods_LI_Thirst.framework in Frameworks */,
-				98BDEE8C571B7BE8657A3AB7 /* Pods_LI_Thirst.framework in Frameworks */,
+				94C9AF86BE95653DB005897D /* Pods_LI_Thirst.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				FB1515741E7F08EC0006C046 /* NSObject.swift */,
+				FBCD33A91E99B3BF004E7897 /* Array.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -742,6 +746,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB3FD7FD1E7784790004C49E /* LIVenuesRequest.swift in Sources */,
+				FBCD33AA1E99B3BF004E7897 /* Array.swift in Sources */,
 				FB3FD7FB1E7780660004C49E /* LIVenue.swift in Sources */,
 				FB619A2A1E9952B300D7D577 /* main.swift in Sources */,
 				FB1515751E7F08EC0006C046 /* NSObject.swift in Sources */,
@@ -788,6 +793,7 @@
 				FBF4BFBD1E883C0100D3E9B9 /* LIMapViewController.swift in Sources */,
 				FBF4BFBE1E883C0100D3E9B9 /* NSObject.swift in Sources */,
 				FB619A2E1E9957A400D7D577 /* TestingAppDelegate.swift in Sources */,
+				FBCD33AB1E99B3BF004E7897 /* Array.swift in Sources */,
 				FBF4BFC01E883C0100D3E9B9 /* LIAPIRequest.swift in Sources */,
 				FBE4709A1E8C6F490014E8C4 /* LIVenueFixture.swift in Sources */,
 				FB619A311E995B1200D7D577 /* AppDelegate.swift in Sources */,

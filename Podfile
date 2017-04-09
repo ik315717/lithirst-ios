@@ -3,10 +3,8 @@ platform :ios, '9.0'
 
 def shared_pods
   pod 'Alamofire', '~> 4.4'
-  pod 'Nimble'
   pod 'ObjectMapper'
   pod 'OHHTTPStubs/Swift'
-  pod 'Quick'
   pod 'SwiftyJSON'
 end
 
@@ -20,6 +18,8 @@ end
 
 target 'Unit Tests' do
  shared_pods
+ pod 'Quick'
+pod 'Nimble'
 end
 
 target 'UI Tests' do
