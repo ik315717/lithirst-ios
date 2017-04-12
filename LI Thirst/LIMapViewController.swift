@@ -8,7 +8,11 @@ class LIMapViewController: UIViewController, CLLocationManagerDelegate, UISearch
   @IBOutlet var searchBar: UISearchBar!
   
   var locationManger: CLLocationManager!
-  var venueList: Array<LIVenue> = []
+  var venueList: Array<LIVenue> = [] {
+    didSet {
+      
+    }
+  }
   var userLocation: CLLocation?
   var userLocationUpdates : [CLLocationDistance] = []
   
@@ -23,10 +27,43 @@ class LIMapViewController: UIViewController, CLLocationManagerDelegate, UISearch
     let apiRequest = LIVenuesRequest.init()
     apiRequest.getVenues { venues in
       self.venueList = venues
+      self.addVenuesToMap()
     }
   }
   
-  // MARK: Location Manager Delegate
+  // MARK: Button Presses
+  
+  @IBAction func userLocationButtonPress(_ sender: UIButton) {
+    if let location = userLocation {
+      setMapLocation(locationToPanTo: location)
+    }
+  }
+  
+  // MARK: Map Private Methods
+  
+  func addVenuesToMap() {
+    for venue in venueList {
+      let annotation = MKPointAnnotation()
+      
+      if let latitude = venue.latitude, let longitude = venue.longitude {
+        let coordinate = CLLocationCoordinate2DMake(latitude, longitude)
+        annotation.coordinate = coordinate
+        
+        mapView.addAnnotation(annotation)
+      }
+    }
+  }
+  
+  func calculateRegionForVenues() {
+    var coordinateList : [CLLocationCoordinate2D] = []
+    
+    for venue in venueList {
+      if let latitude = venue.latitude, let longitude = venue.longitude {
+        let coordinate = CLLocationCoordinate2DMake(latitude, longitude)
+        coordinateList.append(coordinate)
+      }
+    }
+  }
   
   func getCurrentLocation() {
     locationManger = CLLocationManager()
@@ -39,18 +76,23 @@ class LIMapViewController: UIViewController, CLLocationManagerDelegate, UISearch
     }
   }
   
+  func setMapLocation(locationToPanTo location: CLLocation) {
+    let span = MKCoordinateSpanMake(0.05, 0.05)
+    let region = MKCoordinateRegion(center: location.coordinate, span: span)
+    mapView.setRegion(region, animated: true)
+  }
+  
+  // MARK: Location Manager Delegate
+  
   func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
 
     if let pastLocation = userLocation, let location = locations.first {
+      setMapLocation(locationToPanTo: location)
+      
       let meters = location.distance(from: pastLocation)
       userLocationUpdates.append(meters)
-      
       if userLocationUpdates.reduce(0, +) / Double(userLocationUpdates.count) < 5.0
-        && userLocationUpdates.count > 5 {
-        let span = MKCoordinateSpanMake(0.05, 0.05)
-        let region = MKCoordinateRegion(center: location.coordinate, span: span)
-        mapView.setRegion(region, animated: true)
-        
+        && userLocationUpdates.count > 10 {
         locationManger.stopUpdatingLocation()
       }
     }
@@ -66,19 +108,21 @@ class LIMapViewController: UIViewController, CLLocationManagerDelegate, UISearch
   
   // MARK: Search Bar Delegate
   
-  func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+  func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
     if let searchText = searchBar.text {
-      print(searchText)
       let geoCoder = CLGeocoder()
+      self.view.endEditing(true)
+      weak var weakSelf = self
+      
       geoCoder.geocodeAddressString(searchText) { (placeMarkArray, error) in
         if let placeMark = placeMarkArray?.first {
-          if let location = placeMark.location {
-            print(location.coordinate.latitude)
-            print(location.coordinate.longitude)
+          if let location = placeMark.location, let weakSelfRef = weakSelf {
+            weakSelfRef.locationManger.stopUpdatingLocation()
+            weakSelfRef.setMapLocation(locationToPanTo: location)
           }
         }
       }
     }
   }
-  
+
 }

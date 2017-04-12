@@ -31,15 +31,37 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xYU-qw-DXt" userLabel="Content View">
                     <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                     <subviews>
-                        <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="xRq-r6-KA2">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="34M-CZ-Q8F" userLabel="Map Container View">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
-                        </mapView>
+                            <subviews>
+                                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="xRq-r6-KA2">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                                </mapView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lG2-cN-WxZ" userLabel="User Location Button">
+                                    <rect key="frame" x="338" y="586" width="25" height="25"/>
+                                    <state key="normal" image="user_location_icon"/>
+                                    <connections>
+                                        <action selector="userLocationButtonPress:" destination="-1" eventType="touchDragOutside" id="Bnu-d0-vT3"/>
+                                        <action selector="userLocationButtonPress:" destination="-1" eventType="touchUpInside" id="jPd-cu-sgL"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="xRq-r6-KA2" secondAttribute="bottom" id="Ujb-83-56A"/>
+                                <constraint firstItem="xRq-r6-KA2" firstAttribute="leading" secondItem="34M-CZ-Q8F" secondAttribute="leading" id="X91-4t-nUr"/>
+                                <constraint firstItem="xRq-r6-KA2" firstAttribute="top" secondItem="34M-CZ-Q8F" secondAttribute="top" id="cnI-8B-xL6"/>
+                                <constraint firstAttribute="bottom" secondItem="lG2-cN-WxZ" secondAttribute="bottom" constant="12" id="gFX-02-mog"/>
+                                <constraint firstAttribute="trailing" secondItem="lG2-cN-WxZ" secondAttribute="trailing" constant="12" id="kiF-JQ-tbl"/>
+                                <constraint firstAttribute="trailing" secondItem="xRq-r6-KA2" secondAttribute="trailing" id="uUY-In-wOQ"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <constraints>
-                        <constraint firstAttribute="bottom" secondItem="xRq-r6-KA2" secondAttribute="bottom" id="06l-Ex-dxc"/>
-                        <constraint firstItem="xRq-r6-KA2" firstAttribute="leading" secondItem="xYU-qw-DXt" secondAttribute="leading" id="3Ed-WP-mjB"/>
-                        <constraint firstItem="xRq-r6-KA2" firstAttribute="top" secondItem="xYU-qw-DXt" secondAttribute="top" id="N6W-pr-phA"/>
-                        <constraint firstAttribute="trailing" secondItem="xRq-r6-KA2" secondAttribute="trailing" id="s4b-z2-JrF"/>
+                        <constraint firstAttribute="trailing" secondItem="34M-CZ-Q8F" secondAttribute="trailing" id="OXv-Nu-f6k"/>
+                        <constraint firstAttribute="bottom" secondItem="34M-CZ-Q8F" secondAttribute="bottom" id="ZDb-cI-H0j"/>
+                        <constraint firstItem="34M-CZ-Q8F" firstAttribute="top" secondItem="xYU-qw-DXt" secondAttribute="top" id="aeh-hf-UH0"/>
+                        <constraint firstItem="34M-CZ-Q8F" firstAttribute="leading" secondItem="xYU-qw-DXt" secondAttribute="leading" id="gCK-ND-L6G"/>
                     </constraints>
                 </view>
             </subviews>
@@ -57,4 +79,7 @@
             <point key="canvasLocation" x="-739.5" y="-295.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="user_location_icon" width="25" height="25"/>
+    </resources>
 </document>
