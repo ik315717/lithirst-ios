@@ -3,24 +3,37 @@ import MapKit
 
 class LIMapViewController: UIViewController, CLLocationManagerDelegate, UISearchBarDelegate {
   
+  enum tableViewGrabState {
+    case Bottom
+    case Normal
+    case Top
+  }
+  
   @IBOutlet var contentView: UIView!
   @IBOutlet var mapView: MKMapView!
   @IBOutlet var searchBar: UISearchBar!
+  @IBOutlet var tableViewContainerView: UIView!
+  @IBOutlet var tableViewHeightConstraint: NSLayoutConstraint!
   
+  var currentTableViewState = tableViewGrabState.Normal
   var locationManger: CLLocationManager!
-  var venueList: Array<LIVenue> = [] {
-    didSet {
-      
-    }
-  }
   var userLocation: CLLocation?
   var userLocationUpdates : [CLLocationDistance] = []
+  var venueList: Array<LIVenue> = []
+  
+  // Table View Heights
+  var tableViewBottomHeight: CGFloat = 45.0
+  var tableViewNormalHeight: CGFloat = 130.0
+  var tableViewTopHeight: CGFloat {
+    return self.contentView.frame.size.height - 45.0
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
     self.edgesForExtendedLayout = []
     self.getCurrentLocation()
+    setUpMapView()
     self.mapView.showsUserLocation = true
     self.searchBar.delegate = self
     
@@ -40,6 +53,15 @@ class LIMapViewController: UIViewController, CLLocationManagerDelegate, UISearch
   }
   
   // MARK: Map Private Methods
+  
+  func setUpMapView() {
+    let panGesture = UIPanGestureRecognizer(target: self, action: #selector(LIMapViewController.handleMapPanGesture))
+    mapView.addGestureRecognizer(panGesture)
+  }
+  
+  func handleMapPanGesture() {
+    locationManger.stopUpdatingLocation()
+  }
   
   func addVenuesToMap() {
     for venue in venueList {
@@ -100,12 +122,43 @@ class LIMapViewController: UIViewController, CLLocationManagerDelegate, UISearch
     if let location = locations.first {
       userLocation = location
     }
+    print(userLocationUpdates.count)
   }
   
   func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
     print("Location Manager Error: \(error.localizedDescription)")
   }
   
+  // MARK: Table View Containter Methods
+  
+  @IBAction func tableViewContainerSwipeGesture(_ swipeGesture: UISwipeGestureRecognizer) {
+    
+    switch currentTableViewState {
+    case .Bottom:
+      if swipeGesture.direction == .up {
+        currentTableViewState = .Normal
+        tableViewHeightConstraint.constant = tableViewNormalHeight
+      }
+    case .Normal:
+      if swipeGesture.direction == .up {
+        currentTableViewState = .Top
+        tableViewHeightConstraint.constant = tableViewTopHeight
+      } else if  swipeGesture.direction == .down {
+        currentTableViewState = .Bottom
+        tableViewHeightConstraint.constant = tableViewBottomHeight
+      }
+    case .Top:
+      if swipeGesture.direction == .down {
+        currentTableViewState = .Normal
+        tableViewHeightConstraint.constant = tableViewNormalHeight
+      }
+    }
+    
+    UIView.animate(withDuration: 0.40) {
+      self.view.layoutIfNeeded()
+    }
+  }
+
   // MARK: Search Bar Delegate
   
   func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
