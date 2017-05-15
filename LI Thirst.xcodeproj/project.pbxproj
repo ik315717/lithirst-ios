@@ -212,13 +212,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		FB1515721E7F080F0006C046 /* Extension */ = {
+		FB1515721E7F080F0006C046 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				FB1515741E7F08EC0006C046 /* NSObject.swift */,
 				FBCD33A91E99B3BF004E7897 /* Array.swift */,
 			);
-			name = Extension;
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		FB1515731E7F08280006C046 /* Resources */ = {
@@ -311,7 +311,7 @@
 			children = (
 				FB3FD7F91E7780010004C49E /* API Requests */,
 				FB966F821E75BAE200842CB8 /* AppDelegate.swift */,
-				FB1515721E7F080F0006C046 /* Extension */,
+				FB1515721E7F080F0006C046 /* Extensions */,
 				FB3FD7F81E777F160004C49E /* Models */,
 				FB3FD7F21E777A6A0004C49E /* Nibs */,
 				FB1515731E7F08280006C046 /* Resources */,

@@ -122,7 +122,6 @@ class LIMapViewController: UIViewController, CLLocationManagerDelegate, UISearch
     if let location = locations.first {
       userLocation = location
     }
-    print(userLocationUpdates.count)
   }
   
   func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
