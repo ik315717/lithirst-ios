@@ -16,6 +16,10 @@
 		FB3FD7F71E777AD60004C49E /* LIMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB3FD7F51E777AD60004C49E /* LIMapViewController.xib */; };
 		FB3FD7FB1E7780660004C49E /* LIVenue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FD7FA1E7780660004C49E /* LIVenue.swift */; };
 		FB3FD7FD1E7784790004C49E /* LIVenuesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FD7FC1E7784790004C49E /* LIVenuesRequest.swift */; };
+		FB51EEAB1EC93D9B00DA143D /* LIVenueMapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51EEA91EC93D9B00DA143D /* LIVenueMapCell.swift */; };
+		FB51EEAC1EC93D9B00DA143D /* LIVenueMapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51EEA91EC93D9B00DA143D /* LIVenueMapCell.swift */; };
+		FB51EEAD1EC93D9B00DA143D /* LIVenueMapCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB51EEAA1EC93D9B00DA143D /* LIVenueMapCell.xib */; };
+		FB51EEAE1EC93D9B00DA143D /* LIVenueMapCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB51EEAA1EC93D9B00DA143D /* LIVenueMapCell.xib */; };
 		FB619A221E994A8600D7D577 /* LIVenueFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE470991E8C6F490014E8C4 /* LIVenueFixture.swift */; };
 		FB619A231E994A9300D7D577 /* LIVenueFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE470991E8C6F490014E8C4 /* LIVenueFixture.swift */; };
 		FB619A261E994B9E00D7D577 /* LIVenuesRequestSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB619A241E994B9A00D7D577 /* LIVenuesRequestSpec.swift */; };
@@ -111,6 +115,8 @@
 		FB3FD7F51E777AD60004C49E /* LIMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LIMapViewController.xib; sourceTree = "<group>"; };
 		FB3FD7FA1E7780660004C49E /* LIVenue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LIVenue.swift; sourceTree = "<group>"; };
 		FB3FD7FC1E7784790004C49E /* LIVenuesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LIVenuesRequest.swift; sourceTree = "<group>"; };
+		FB51EEA91EC93D9B00DA143D /* LIVenueMapCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LIVenueMapCell.swift; sourceTree = "<group>"; };
+		FB51EEAA1EC93D9B00DA143D /* LIVenueMapCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LIVenueMapCell.xib; sourceTree = "<group>"; };
 		FB619A241E994B9A00D7D577 /* LIVenuesRequestSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LIVenuesRequestSpec.swift; sourceTree = "<group>"; };
 		FB619A291E9952B300D7D577 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = "LI Thirst/main.swift"; sourceTree = "<group>"; };
 		FB619A2C1E9957A400D7D577 /* TestingAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
@@ -240,8 +246,9 @@
 		FB3FD7F21E777A6A0004C49E /* Nibs */ = {
 			isa = PBXGroup;
 			children = (
-				FB3FD7F51E777AD60004C49E /* LIMapViewController.xib */,
 				FB966F8E1E75BAE200842CB8 /* LaunchScreen.storyboard */,
+				FB3FD7F51E777AD60004C49E /* LIMapViewController.xib */,
+				FB51EEAA1EC93D9B00DA143D /* LIVenueMapCell.xib */,
 			);
 			name = Nibs;
 			sourceTree = "<group>";
@@ -271,6 +278,14 @@
 				FB619A2C1E9957A400D7D577 /* TestingAppDelegate.swift */,
 			);
 			name = "Testing App";
+			sourceTree = "<group>";
+		};
+		FB51EEA81EC93CE400DA143D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB51EEA91EC93D9B00DA143D /* LIVenueMapCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		FB81B9C91E835A40009CF259 /* Mapper Transforms */ = {
@@ -317,6 +332,7 @@
 				FB1515731E7F08280006C046 /* Resources */,
 				FBF4BFB71E883B2300D3E9B9 /* Support Files */,
 				FB3FD7F11E777A5D0004C49E /* View Controllers */,
+				FB51EEA81EC93CE400DA143D /* Views */,
 			);
 			path = "LI Thirst";
 			sourceTree = "<group>";
@@ -529,6 +545,7 @@
 				FB966F901E75BAE200842CB8 /* LaunchScreen.storyboard in Resources */,
 				FB3FD7F71E777AD60004C49E /* LIMapViewController.xib in Resources */,
 				FB966F8D1E75BAE200842CB8 /* Assets.xcassets in Resources */,
+				FB51EEAD1EC93D9B00DA143D /* LIVenueMapCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,6 +573,7 @@
 				FBF4BFC61E883C0100D3E9B9 /* LaunchScreen.storyboard in Resources */,
 				FBF4BFC71E883C0100D3E9B9 /* LIMapViewController.xib in Resources */,
 				FBF4BFC81E883C0100D3E9B9 /* Assets.xcassets in Resources */,
+				FB51EEAE1EC93D9B00DA143D /* LIVenueMapCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -756,6 +774,7 @@
 				FB1515751E7F08EC0006C046 /* NSObject.swift in Sources */,
 				FB966F831E75BAE200842CB8 /* AppDelegate.swift in Sources */,
 				FB265AD31E78BF6A0056015B /* LIAPIRequest.swift in Sources */,
+				FB51EEAB1EC93D9B00DA143D /* LIVenueMapCell.swift in Sources */,
 				FB619A221E994A8600D7D577 /* LIVenueFixture.swift in Sources */,
 				FB619A281E99519000D7D577 /* LIMapViewController.swift in Sources */,
 				FB81B9CB1E835A67009CF259 /* LICustomMapTransforms.swift in Sources */,
@@ -802,6 +821,7 @@
 				FBCD33AB1E99B3BF004E7897 /* Array.swift in Sources */,
 				FBF4BFC01E883C0100D3E9B9 /* LIAPIRequest.swift in Sources */,
 				FBE4709A1E8C6F490014E8C4 /* LIVenueFixture.swift in Sources */,
+				FB51EEAC1EC93D9B00DA143D /* LIVenueMapCell.swift in Sources */,
 				FB619A311E995B1200D7D577 /* AppDelegate.swift in Sources */,
 				FBF4BFC11E883C0100D3E9B9 /* LICustomMapTransforms.swift in Sources */,
 			);

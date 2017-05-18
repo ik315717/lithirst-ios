@@ -1,7 +1,11 @@
 import UIKit
 import MapKit
 
-class LIMapViewController: UIViewController, CLLocationManagerDelegate, UISearchBarDelegate {
+class LIMapViewController: UIViewController,
+                           CLLocationManagerDelegate,
+                           UISearchBarDelegate,
+                           UITableViewDataSource,
+                           UITableViewDelegate {
   
   enum tableViewGrabState {
     case Bottom
@@ -14,6 +18,7 @@ class LIMapViewController: UIViewController, CLLocationManagerDelegate, UISearch
   @IBOutlet var searchBar: UISearchBar!
   @IBOutlet var tableViewContainerView: UIView!
   @IBOutlet var tableViewHeightConstraint: NSLayoutConstraint!
+  @IBOutlet var tableView: UITableView!
   
   var currentTableViewState = tableViewGrabState.Normal
   var locationManger: CLLocationManager!
@@ -35,12 +40,18 @@ class LIMapViewController: UIViewController, CLLocationManagerDelegate, UISearch
     self.getCurrentLocation()
     setUpMapView()
     self.mapView.showsUserLocation = true
+    
+    self.tableView.dataSource = self
+    self.tableView.delegate = self
+    self.tableView.register(UINib(nibName:LIVenueMapCell.className, bundle: nil), forCellReuseIdentifier: LIVenueMapCell.className)
     self.searchBar.delegate = self
     
     let apiRequest = LIVenuesRequest.init()
     apiRequest.getVenues { venues in
       self.venueList = venues
+      
       self.addVenuesToMap()
+      self.tableView.reloadData()
     }
   }
   
@@ -127,6 +138,27 @@ class LIMapViewController: UIViewController, CLLocationManagerDelegate, UISearch
   func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
     print("Location Manager Error: \(error.localizedDescription)")
   }
+  
+  // MARK: TableView Delegate Methods
+  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    print("Selected \(self.venueList[indexPath.row].name)")
+  }
+  
+  // MARK: TableView DataSource Methdos
+  
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return self.venueList.count
+  }
+  
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell: LIVenueMapCell = tableView.dequeueReusableCell(withIdentifier: LIVenueMapCell.className) as! LIVenueMapCell
+    
+    cell.venueLabel.text = self.venueList[indexPath.row].name
+    
+    return cell
+  }
+  
   
   // MARK: Table View Containter Methods
   
