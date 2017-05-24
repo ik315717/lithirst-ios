@@ -122,9 +122,12 @@ class LIMapViewController: UIViewController,
   func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
 
     if let pastLocation = userLocation, let location = locations.first {
-      setMapLocation(locationToPanTo: location)
-      
       let meters = location.distance(from: pastLocation)
+      if meters > 10 || userLocationUpdates.count < 5 {
+        setMapLocation(locationToPanTo: location)
+      }
+
+      
       userLocationUpdates.append(meters)
       if userLocationUpdates.reduce(0, +) / Double(userLocationUpdates.count) < 5.0
         && userLocationUpdates.count > 10 {
