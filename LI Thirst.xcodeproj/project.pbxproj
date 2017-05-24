@@ -16,6 +16,9 @@
 		FB3FD7F71E777AD60004C49E /* LIMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB3FD7F51E777AD60004C49E /* LIMapViewController.xib */; };
 		FB3FD7FB1E7780660004C49E /* LIVenue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FD7FA1E7780660004C49E /* LIVenue.swift */; };
 		FB3FD7FD1E7784790004C49E /* LIVenuesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FD7FC1E7784790004C49E /* LIVenuesRequest.swift */; };
+		FB4A30B81ED3D7CF00402C66 /* LIDeal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4A30B71ED3D7CF00402C66 /* LIDeal.swift */; };
+		FB4A30B91ED3D7CF00402C66 /* LIDeal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4A30B71ED3D7CF00402C66 /* LIDeal.swift */; };
+		FB4A30BA1ED3D7CF00402C66 /* LIDeal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4A30B71ED3D7CF00402C66 /* LIDeal.swift */; };
 		FB51EEAB1EC93D9B00DA143D /* LIVenueMapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51EEA91EC93D9B00DA143D /* LIVenueMapCell.swift */; };
 		FB51EEAC1EC93D9B00DA143D /* LIVenueMapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51EEA91EC93D9B00DA143D /* LIVenueMapCell.swift */; };
 		FB51EEAD1EC93D9B00DA143D /* LIVenueMapCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB51EEAA1EC93D9B00DA143D /* LIVenueMapCell.xib */; };
@@ -115,6 +118,7 @@
 		FB3FD7F51E777AD60004C49E /* LIMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LIMapViewController.xib; sourceTree = "<group>"; };
 		FB3FD7FA1E7780660004C49E /* LIVenue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LIVenue.swift; sourceTree = "<group>"; };
 		FB3FD7FC1E7784790004C49E /* LIVenuesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LIVenuesRequest.swift; sourceTree = "<group>"; };
+		FB4A30B71ED3D7CF00402C66 /* LIDeal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LIDeal.swift; sourceTree = "<group>"; };
 		FB51EEA91EC93D9B00DA143D /* LIVenueMapCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LIVenueMapCell.swift; sourceTree = "<group>"; };
 		FB51EEAA1EC93D9B00DA143D /* LIVenueMapCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LIVenueMapCell.xib; sourceTree = "<group>"; };
 		FB619A241E994B9A00D7D577 /* LIVenuesRequestSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LIVenuesRequestSpec.swift; sourceTree = "<group>"; };
@@ -258,6 +262,7 @@
 			children = (
 				FB81B9C91E835A40009CF259 /* Mapper Transforms */,
 				FB3FD7FA1E7780660004C49E /* LIVenue.swift */,
+				FB4A30B71ED3D7CF00402C66 /* LIDeal.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -769,6 +774,7 @@
 			files = (
 				FB3FD7FD1E7784790004C49E /* LIVenuesRequest.swift in Sources */,
 				FBCD33AA1E99B3BF004E7897 /* Array.swift in Sources */,
+				FB4A30B81ED3D7CF00402C66 /* LIDeal.swift in Sources */,
 				FB3FD7FB1E7780660004C49E /* LIVenue.swift in Sources */,
 				FB619A2A1E9952B300D7D577 /* main.swift in Sources */,
 				FB1515751E7F08EC0006C046 /* NSObject.swift in Sources */,
@@ -795,6 +801,7 @@
 				FBF4BFAE1E88195B00D3E9B9 /* LIVenueSpec.swift in Sources */,
 				FB619A231E994A9300D7D577 /* LIVenueFixture.swift in Sources */,
 				FBF4BFAC1E871B8800D3E9B9 /* NSObject.swift in Sources */,
+				FB4A30BA1ED3D7CF00402C66 /* LIDeal.swift in Sources */,
 				FBCD33AE1EA6F395004E7897 /* LIMapViewController.swift in Sources */,
 				FBCD33AD1EA6F1D8004E7897 /* LIMapViewControllerSpec.swift in Sources */,
 			);
@@ -822,6 +829,7 @@
 				FBF4BFC01E883C0100D3E9B9 /* LIAPIRequest.swift in Sources */,
 				FBE4709A1E8C6F490014E8C4 /* LIVenueFixture.swift in Sources */,
 				FB51EEAC1EC93D9B00DA143D /* LIVenueMapCell.swift in Sources */,
+				FB4A30B91ED3D7CF00402C66 /* LIDeal.swift in Sources */,
 				FB619A311E995B1200D7D577 /* AppDelegate.swift in Sources */,
 				FBF4BFC11E883C0100D3E9B9 /* LICustomMapTransforms.swift in Sources */,
 			);

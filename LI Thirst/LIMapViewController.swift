@@ -43,7 +43,9 @@ class LIMapViewController: UIViewController,
     
     self.tableView.dataSource = self
     self.tableView.delegate = self
-    self.tableView.register(UINib(nibName:LIVenueMapCell.className, bundle: nil), forCellReuseIdentifier: LIVenueMapCell.className)
+    self.tableView.register(UINib(nibName:LIVenueMapCell.className,
+                                   bundle: nil),
+                   forCellReuseIdentifier: LIVenueMapCell.className)
     self.searchBar.delegate = self
     
     let apiRequest = LIVenuesRequest.init()

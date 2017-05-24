@@ -10,7 +10,7 @@ class LIVenue : Mappable {
   var name : String?
   var state : String?
   var venueID : Int?
-  var deals : Array<Any> = []
+  var deals : Array<LIDeal> = []
 
   required init?(map: Map) {
     // check if a required property exists within the JSON.
@@ -27,6 +27,6 @@ class LIVenue : Mappable {
     name      <- map["name"]
     state     <- map["state"]
     venueID   <- map["id"]
-    deals     <- map["deals"]
+    deals     <- (map["deals"], LICustomMapTransforms.jsonDealarrayToLIDealTransform())
   }
 }

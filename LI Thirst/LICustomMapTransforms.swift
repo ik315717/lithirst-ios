@@ -40,6 +40,27 @@ class LICustomMapTransforms {
     
     return transform()
   }
-
+  
+  class func jsonDealarrayToLIDealTransform() -> TransformOf<Array<LIDeal>, Array<Any>> {
+    let transform = {
+      TransformOf<Array<LIDeal>, Array<Any>>(fromJSON: {
+        (jsonArray: Array<Any>?) -> Array<LIDeal>? in
+        var finalArray : Array<LIDeal> = []
+        
+        for jsonDeal in jsonArray! {
+          let deal = Mapper<LIDeal>().map(JSONObject: jsonDeal)
+          finalArray.append(deal!)
+        }
+        
+        return finalArray
+      }, toJSON: {
+        (value: Array<LIDeal>?) -> Array<Any>? in
+        //This method has no need atm to reverse the object to a dictionary
+        return nil
+      })
+    }
+    
+    return transform()
+  }
 }
 
