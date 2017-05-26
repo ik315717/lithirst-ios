@@ -11,6 +11,10 @@ class LIVenue : Mappable {
   var state : String?
   var venueID : Int?
   var deals : Array<LIDeal> = []
+  
+  var activeDealTitle : String? {
+    return self.getActiveDeal()
+  }
 
   required init?(map: Map) {
     // check if a required property exists within the JSON.
@@ -28,5 +32,31 @@ class LIVenue : Mappable {
     state     <- map["state"]
     venueID   <- map["id"]
     deals     <- (map["deals"], LICustomMapTransforms.jsonDealarrayToLIDealTransform())
+  }
+  
+  
+  // MARK: Public functions
+  
+  public func getActiveDeal() -> String? {
+    for deal in self.deals {
+      if let endDate = deal.endTime,
+          let startDate = deal.startTime,
+          let dealTitle = deal.title,
+          let expirationDate = deal.expirationDate {
+        
+        if Date() < expirationDate {
+          if let startDateAdjusted = Date().dateAdjustedToCurrentDay(date: startDate),
+            let endDateAdjusted = Date().dateAdjustedToCurrentDay(date: endDate) {
+              let fallsBetween = (startDateAdjusted...endDateAdjusted).contains(Date().localizedDate())
+            
+              if fallsBetween {
+                return dealTitle
+              }
+          }
+        }
+      }
+    }
+    
+    return nil
   }
 }

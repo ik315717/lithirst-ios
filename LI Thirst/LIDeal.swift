@@ -17,9 +17,9 @@ class LIDeal : Mappable {
   func mapping(map: Map) {
     dealID      <- map["id"]
     description <- map["description"]
-    endTime     <- (map["end_time"], DateTransform())
-    expirationDate <- (map["expiration"], DateTransform())
-    startTime   <- (map["start_time"], DateTransform())
+    endTime     <- (map["end_time"], LIISO8601DateTransform())
+    expirationDate <- (map["expiration"], LIDateNoTimeTransform())
+    startTime   <- (map["start_time"], LIISO8601DateTransform())
     title       <- map["title"]
   }
 }

@@ -37,6 +37,9 @@ class LIMapViewController: UIViewController,
     super.viewDidLoad()
     
     self.edgesForExtendedLayout = []
+    self.tableViewContainerView.layer.cornerRadius = 20.0
+    self.tableViewContainerView.clipsToBounds = true
+    
     self.getCurrentLocation()
     setUpMapView()
     self.mapView.showsUserLocation = true
@@ -152,6 +155,14 @@ class LIMapViewController: UIViewController,
   
   // MARK: TableView DataSource Methdos
   
+  func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+    return UITableViewAutomaticDimension
+  }
+  
+  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    return UITableViewAutomaticDimension
+  }
+  
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return self.venueList.count
   }
@@ -160,6 +171,7 @@ class LIMapViewController: UIViewController,
     let cell: LIVenueMapCell = tableView.dequeueReusableCell(withIdentifier: LIVenueMapCell.className) as! LIVenueMapCell
     
     cell.venueLabel.text = self.venueList[indexPath.row].name
+    cell.venueDealLabel.text = self.venueList[indexPath.row].activeDealTitle
     
     return cell
   }
