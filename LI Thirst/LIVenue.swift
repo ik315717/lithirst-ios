@@ -39,19 +39,22 @@ class LIVenue : Mappable {
   
   public func getActiveDeal() -> String? {
     for deal in self.deals {
-      if let endDate = deal.endTime,
+      if let hoursActive = deal.hoursActive,
           let startDate = deal.startTime,
           let dealTitle = deal.title,
-          let expirationDate = deal.expirationDate {
+          let expirationDate = deal.expirationDate,
+          let days = deal.daysAvailable {
+        
+          let endDate = startDate.addingTimeInterval(Double(hoursActive) * 60.0 * 60.0)
         
         if Date() < expirationDate {
           if let startDateAdjusted = Date().dateAdjustedToCurrentDay(date: startDate),
             let endDateAdjusted = Date().dateAdjustedToCurrentDay(date: endDate) {
               let fallsBetween = (startDateAdjusted...endDateAdjusted).contains(Date().localizedDate())
-            
-              if fallsBetween {
+
+            if fallsBetween && days.contains(LIDay.getDayOfWeek()) {
                 return dealTitle
-              }
+            }
           }
         }
       }

@@ -5,8 +5,9 @@ class LIDeal : Mappable {
   
   var dealID : Int?
   var description : String?
-  var endTime : Date?
+  var daysAvailable : Array<LIDay>?
   var expirationDate : Date?
+  var hoursActive : Float?
   var startTime : Date?
   var title : String?
   
@@ -15,11 +16,12 @@ class LIDeal : Mappable {
   }
   
   func mapping(map: Map) {
+    daysAvailable <- (map["days"], LICustomMapTransforms.jsonDayArrayToLIDayTransform())
     dealID      <- map["id"]
     description <- map["description"]
-    endTime     <- (map["end_time"], LIISO8601DateTransform())
     expirationDate <- (map["expiration"], LIDateNoTimeTransform())
-    startTime   <- (map["start_time"], LIISO8601DateTransform())
+    hoursActive <- (map["hours_active"],LICustomMapTransforms.stringToFloatTransform())
+    startTime   <- (map["start_time"], LIDateTimeTransform())
     title       <- map["title"]
   }
 }

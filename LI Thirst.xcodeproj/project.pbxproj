@@ -13,6 +13,12 @@
 		D953E6B02E26F2865FF9A59A /* Pods_Unit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CB9F4FBC86511C284E7C3AF /* Pods_Unit_Tests.framework */; };
 		FB1515751E7F08EC0006C046 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1515741E7F08EC0006C046 /* NSObject.swift */; };
 		FB265AD31E78BF6A0056015B /* LIAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB265AD21E78BF6A0056015B /* LIAPIRequest.swift */; };
+		FB26B2CF1EDB1BAC00354159 /* LIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB26B2CE1EDB1BAC00354159 /* LIConstants.swift */; };
+		FB26B2D01EDB1BAC00354159 /* LIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB26B2CE1EDB1BAC00354159 /* LIConstants.swift */; };
+		FB26B2D11EDB1BAC00354159 /* LIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB26B2CE1EDB1BAC00354159 /* LIConstants.swift */; };
+		FB26B2D31EDB1DEE00354159 /* LIDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB26B2D21EDB1DEE00354159 /* LIDay.swift */; };
+		FB26B2D41EDB1DEE00354159 /* LIDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB26B2D21EDB1DEE00354159 /* LIDay.swift */; };
+		FB26B2D51EDB1DEE00354159 /* LIDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB26B2D21EDB1DEE00354159 /* LIDay.swift */; };
 		FB3FD7F71E777AD60004C49E /* LIMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB3FD7F51E777AD60004C49E /* LIMapViewController.xib */; };
 		FB3FD7FB1E7780660004C49E /* LIVenue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FD7FA1E7780660004C49E /* LIVenue.swift */; };
 		FB3FD7FD1E7784790004C49E /* LIVenuesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FD7FC1E7784790004C49E /* LIVenuesRequest.swift */; };
@@ -118,6 +124,8 @@
 		DB64DDEEF7EF0F3D611796B0 /* Pods-UI Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UI Tests/Pods-UI Tests.release.xcconfig"; sourceTree = "<group>"; };
 		FB1515741E7F08EC0006C046 /* NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
 		FB265AD21E78BF6A0056015B /* LIAPIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = LIAPIRequest.swift; sourceTree = "<group>"; tabWidth = 2; };
+		FB26B2CE1EDB1BAC00354159 /* LIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LIConstants.swift; sourceTree = "<group>"; };
+		FB26B2D21EDB1DEE00354159 /* LIDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LIDay.swift; sourceTree = "<group>"; };
 		FB3FD7F41E777AD60004C49E /* LIMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LIMapViewController.swift; sourceTree = "<group>"; };
 		FB3FD7F51E777AD60004C49E /* LIMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LIMapViewController.xib; sourceTree = "<group>"; };
 		FB3FD7FA1E7780660004C49E /* LIVenue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LIVenue.swift; sourceTree = "<group>"; };
@@ -242,6 +250,14 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		FB26B2CD1EDB1B9500354159 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FB26B2CE1EDB1BAC00354159 /* LIConstants.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
 		FB3FD7F11E777A5D0004C49E /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -263,9 +279,10 @@
 		FB3FD7F81E777F160004C49E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FB81B9C91E835A40009CF259 /* Mapper Transforms */,
-				FB3FD7FA1E7780660004C49E /* LIVenue.swift */,
+				FB26B2D21EDB1DEE00354159 /* LIDay.swift */,
 				FB4A30B71ED3D7CF00402C66 /* LIDeal.swift */,
+				FB3FD7FA1E7780660004C49E /* LIVenue.swift */,
+				FB81B9C91E835A40009CF259 /* Mapper Transforms */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -335,6 +352,7 @@
 			children = (
 				FB3FD7F91E7780010004C49E /* API Requests */,
 				FB966F821E75BAE200842CB8 /* AppDelegate.swift */,
+				FB26B2CD1EDB1B9500354159 /* Constants */,
 				FB1515721E7F080F0006C046 /* Extensions */,
 				FB3FD7F81E777F160004C49E /* Models */,
 				FB3FD7F21E777A6A0004C49E /* Nibs */,
@@ -787,9 +805,11 @@
 				FB966F831E75BAE200842CB8 /* AppDelegate.swift in Sources */,
 				FB265AD31E78BF6A0056015B /* LIAPIRequest.swift in Sources */,
 				FB51EEAB1EC93D9B00DA143D /* LIVenueMapCell.swift in Sources */,
+				FB26B2D31EDB1DEE00354159 /* LIDay.swift in Sources */,
 				FB4A30BC1ED656CF00402C66 /* UIColor.swift in Sources */,
 				FB619A221E994A8600D7D577 /* LIVenueFixture.swift in Sources */,
 				FB619A281E99519000D7D577 /* LIMapViewController.swift in Sources */,
+				FB26B2CF1EDB1BAC00354159 /* LIConstants.swift in Sources */,
 				FB81B9CB1E835A67009CF259 /* LICustomMapTransforms.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -798,6 +818,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB26B2D11EDB1BAC00354159 /* LIConstants.swift in Sources */,
 				FBF4BFB21E881CD100D3E9B9 /* LICustomMapTransforms.swift in Sources */,
 				FBF4BFAF1E881BF500D3E9B9 /* LIVenue.swift in Sources */,
 				FBF4BFB61E882B8F00D3E9B9 /* LIAPIRequest.swift in Sources */,
@@ -807,6 +828,7 @@
 				FB619A271E994D8F00D7D577 /* LIVenuesRequest.swift in Sources */,
 				FBF4BFAE1E88195B00D3E9B9 /* LIVenueSpec.swift in Sources */,
 				FB619A231E994A9300D7D577 /* LIVenueFixture.swift in Sources */,
+				FB26B2D51EDB1DEE00354159 /* LIDay.swift in Sources */,
 				FBF4BFAC1E871B8800D3E9B9 /* NSObject.swift in Sources */,
 				FB4A30BA1ED3D7CF00402C66 /* LIDeal.swift in Sources */,
 				FBCD33AE1EA6F395004E7897 /* LIMapViewController.swift in Sources */,
@@ -833,6 +855,7 @@
 				FBD83E831ED663C200FFC6C5 /* Date.swift in Sources */,
 				FBF4BFBD1E883C0100D3E9B9 /* LIMapViewController.swift in Sources */,
 				FBF4BFBE1E883C0100D3E9B9 /* NSObject.swift in Sources */,
+				FB26B2D41EDB1DEE00354159 /* LIDay.swift in Sources */,
 				FB619A2E1E9957A400D7D577 /* TestingAppDelegate.swift in Sources */,
 				FB95CCB51ED66F7C000F3A73 /* LIDateTransformers.swift in Sources */,
 				FBCD33AB1E99B3BF004E7897 /* Array.swift in Sources */,
@@ -842,6 +865,7 @@
 				FB4A30B91ED3D7CF00402C66 /* LIDeal.swift in Sources */,
 				FB619A311E995B1200D7D577 /* AppDelegate.swift in Sources */,
 				FBF4BFC11E883C0100D3E9B9 /* LICustomMapTransforms.swift in Sources */,
+				FB26B2D01EDB1BAC00354159 /* LIConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,7 +15,6 @@ extension Date {
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "HH:mm:ss +SSSS"
     dateFormatter.timeZone = TimeZone(identifier: "UTC")
-    
 
     let stringOfTime = dateFormatter.string(from: date)
     dateFormatter.dateFormat = "yyyy-MM-dd "
@@ -26,5 +25,11 @@ extension Date {
     dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss +SSSS"
     
     return dateFormatter.date(from: fullDate)
+  }
+  
+  func dayOfWeek() -> String {
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "EEEE"
+    return dateFormatter.string(from: self).capitalized
   }
 }

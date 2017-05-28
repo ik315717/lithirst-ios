@@ -10,7 +10,6 @@ class LIISO8601DateTransform: DateFormatterTransform {
     
     super.init(dateFormatter: formatter)
   }
-  
 }
 
 class LIDateNoTimeTransform: DateFormatterTransform {
@@ -22,5 +21,16 @@ class LIDateNoTimeTransform: DateFormatterTransform {
     
     super.init(dateFormatter: formatter)
   }
+}
+
+class LIDateTimeTransform: DateFormatterTransform {
   
+  public init() {
+    let formatter = DateFormatter()
+    formatter.locale = Locale(identifier: "en_US_POSIX")
+    formatter.timeZone = TimeZone(identifier: "UTC")
+    formatter.dateFormat = "hh:mm a"
+    
+    super.init(dateFormatter: formatter)
+  }
 }
