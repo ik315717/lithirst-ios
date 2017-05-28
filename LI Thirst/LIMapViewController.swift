@@ -1,7 +1,7 @@
 import UIKit
 import MapKit
 
-class LIMapViewController: UIViewController,
+class LIMapViewController: LIUIViewController,
                            CLLocationManagerDelegate,
                            UISearchBarDelegate,
                            UITableViewDataSource,
@@ -151,6 +151,9 @@ class LIMapViewController: UIViewController,
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     print("Selected \(self.venueList[indexPath.row].name)")
+    
+    let venueDetailsViewController = LIVenueDetailViewController(venue: self.venueList[indexPath.row])
+    self.navigationController?.pushViewController(venueDetailsViewController, animated: true)
   }
   
   // MARK: TableView DataSource Methdos

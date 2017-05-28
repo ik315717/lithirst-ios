@@ -76,6 +76,11 @@
 		FBF4BFC61E883C0100D3E9B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB966F8E1E75BAE200842CB8 /* LaunchScreen.storyboard */; };
 		FBF4BFC71E883C0100D3E9B9 /* LIMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB3FD7F51E777AD60004C49E /* LIMapViewController.xib */; };
 		FBF4BFC81E883C0100D3E9B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB966F8C1E75BAE200842CB8 /* Assets.xcassets */; };
+		FBFD51011EDCCFF3002D3404 /* LIVenueDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBFD51001EDCCFF3002D3404 /* LIVenueDetailViewController.xib */; };
+		FBFD51031EDCD00B002D3404 /* LIVenueDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFD51021EDCD00B002D3404 /* LIVenueDetailViewController.swift */; };
+		FBFD51041EDCD469002D3404 /* LIVenueDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFD51021EDCD00B002D3404 /* LIVenueDetailViewController.swift */; };
+		FBFD51071EDD61B0002D3404 /* LIUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFD51061EDD61B0002D3404 /* LIUIViewController.swift */; };
+		FBFD51081EDD61B0002D3404 /* LIUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFD51061EDD61B0002D3404 /* LIUIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,6 +168,9 @@
 		FBF4BFB41E8828ED00D3E9B9 /* LIAPIRequestSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LIAPIRequestSpec.swift; sourceTree = "<group>"; };
 		FBF4BFCE1E883C0100D3E9B9 /* Testing App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Testing App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF4BFCF1E883C0100D3E9B9 /* Testing-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Testing-App-Info.plist"; path = "/Users/NathanBeaumont/Desktop/LI Thirst/Testing-App-Info.plist"; sourceTree = "<absolute>"; };
+		FBFD51001EDCCFF3002D3404 /* LIVenueDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LIVenueDetailViewController.xib; sourceTree = "<group>"; };
+		FBFD51021EDCD00B002D3404 /* LIVenueDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LIVenueDetailViewController.swift; sourceTree = "<group>"; };
+		FBFD51061EDD61B0002D3404 /* LIUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LIUIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				FB3FD7F41E777AD60004C49E /* LIMapViewController.swift */,
+				FBFD51021EDCD00B002D3404 /* LIVenueDetailViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -271,6 +280,7 @@
 			children = (
 				FB966F8E1E75BAE200842CB8 /* LaunchScreen.storyboard */,
 				FB3FD7F51E777AD60004C49E /* LIMapViewController.xib */,
+				FBFD51001EDCCFF3002D3404 /* LIVenueDetailViewController.xib */,
 				FB51EEAA1EC93D9B00DA143D /* LIVenueMapCell.xib */,
 			);
 			name = Nibs;
@@ -352,6 +362,7 @@
 			children = (
 				FB3FD7F91E7780010004C49E /* API Requests */,
 				FB966F821E75BAE200842CB8 /* AppDelegate.swift */,
+				FBFD51051EDD6189002D3404 /* Base Classes */,
 				FB26B2CD1EDB1B9500354159 /* Constants */,
 				FB1515721E7F080F0006C046 /* Extensions */,
 				FB3FD7F81E777F160004C49E /* Models */,
@@ -421,6 +432,14 @@
 				FB966F911E75BAE200842CB8 /* Info.plist */,
 			);
 			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		FBFD51051EDD6189002D3404 /* Base Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FBFD51061EDD61B0002D3404 /* LIUIViewController.swift */,
+			);
+			name = "Base Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -573,6 +592,7 @@
 				FB3FD7F71E777AD60004C49E /* LIMapViewController.xib in Resources */,
 				FB966F8D1E75BAE200842CB8 /* Assets.xcassets in Resources */,
 				FB51EEAD1EC93D9B00DA143D /* LIVenueMapCell.xib in Resources */,
+				FBFD51011EDCCFF3002D3404 /* LIVenueDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -794,6 +814,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBFD51031EDCD00B002D3404 /* LIVenueDetailViewController.swift in Sources */,
+				FBFD51071EDD61B0002D3404 /* LIUIViewController.swift in Sources */,
 				FB3FD7FD1E7784790004C49E /* LIVenuesRequest.swift in Sources */,
 				FBCD33AA1E99B3BF004E7897 /* Array.swift in Sources */,
 				FB4A30B81ED3D7CF00402C66 /* LIDeal.swift in Sources */,
@@ -857,7 +879,9 @@
 				FBF4BFBE1E883C0100D3E9B9 /* NSObject.swift in Sources */,
 				FB26B2D41EDB1DEE00354159 /* LIDay.swift in Sources */,
 				FB619A2E1E9957A400D7D577 /* TestingAppDelegate.swift in Sources */,
+				FBFD51081EDD61B0002D3404 /* LIUIViewController.swift in Sources */,
 				FB95CCB51ED66F7C000F3A73 /* LIDateTransformers.swift in Sources */,
+				FBFD51041EDCD469002D3404 /* LIVenueDetailViewController.swift in Sources */,
 				FBCD33AB1E99B3BF004E7897 /* Array.swift in Sources */,
 				FBF4BFC01E883C0100D3E9B9 /* LIAPIRequest.swift in Sources */,
 				FBE4709A1E8C6F490014E8C4 /* LIVenueFixture.swift in Sources */,
