@@ -36,10 +36,6 @@ class LIMapViewController: LIUIViewController,
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    self.edgesForExtendedLayout = []
-    self.tableViewContainerView.layer.cornerRadius = 20.0
-    self.tableViewContainerView.clipsToBounds = true
-    
     self.getCurrentLocation()
     setUpMapView()
     self.mapView.showsUserLocation = true
@@ -58,6 +54,14 @@ class LIMapViewController: LIUIViewController,
       self.addVenuesToMap()
       self.tableView.reloadData()
     }
+  }
+  
+  override func styleViews() {
+    super.styleViews()
+    
+    self.setnavigationBar(title: NSLocalizedString("app_name", comment: ""))
+    self.tableViewContainerView.layer.cornerRadius = 20.0
+    self.tableViewContainerView.clipsToBounds = true
   }
   
   // MARK: Button Presses

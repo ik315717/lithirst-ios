@@ -13,7 +13,7 @@ class LIVenue : Mappable {
   var deals : Array<LIDeal> = []
   
   var activeDealTitle : String? {
-    return self.getActiveDeal()
+    return self.getActiveDeal()?.title
   }
 
   required init?(map: Map) {
@@ -37,23 +37,18 @@ class LIVenue : Mappable {
   
   // MARK: Public functions
   
-  public func getActiveDeal() -> String? {
+  public func getActiveDeal() -> LIDeal? {
     for deal in self.deals {
-      if let hoursActive = deal.hoursActive,
-          let startDate = deal.startTime,
-          let dealTitle = deal.title,
-          let expirationDate = deal.expirationDate,
-          let days = deal.daysAvailable {
-        
-          let endDate = startDate.addingTimeInterval(Double(hoursActive) * 60.0 * 60.0)
+      if let expirationDate = deal.expirationDate,
+         let days = deal.daysAvailable {
         
         if Date() < expirationDate {
-          if let startDateAdjusted = Date().dateAdjustedToCurrentDay(date: startDate),
-            let endDateAdjusted = Date().dateAdjustedToCurrentDay(date: endDate) {
-              let fallsBetween = (startDateAdjusted...endDateAdjusted).contains(Date().localizedDate())
+          if let dealStartTime = deal.startTimeAdjustedForDay,
+             let dealEndTime = deal.endTimeAdjustedForDay {
+            let fallsBetween = (dealStartTime...dealEndTime).contains(Date().localizedDate())
 
             if fallsBetween && days.contains(LIDay.getDayOfWeek()) {
-                return dealTitle
+                return deal
             }
           }
         }

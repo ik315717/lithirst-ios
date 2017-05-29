@@ -63,7 +63,6 @@
 		FBF4BFAC1E871B8800D3E9B9 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1515741E7F08EC0006C046 /* NSObject.swift */; };
 		FBF4BFAE1E88195B00D3E9B9 /* LIVenueSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF4BFAD1E88195B00D3E9B9 /* LIVenueSpec.swift */; };
 		FBF4BFAF1E881BF500D3E9B9 /* LIVenue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FD7FA1E7780660004C49E /* LIVenue.swift */; };
-		FBF4BFB11E881C4600D3E9B9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBF4BFB01E881C4600D3E9B9 /* Info.plist */; };
 		FBF4BFB21E881CD100D3E9B9 /* LICustomMapTransforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB81B9CA1E835A67009CF259 /* LICustomMapTransforms.swift */; };
 		FBF4BFB51E8828ED00D3E9B9 /* LIAPIRequestSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF4BFB41E8828ED00D3E9B9 /* LIAPIRequestSpec.swift */; };
 		FBF4BFB61E882B8F00D3E9B9 /* LIAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB265AD21E78BF6A0056015B /* LIAPIRequest.swift */; };
@@ -81,6 +80,12 @@
 		FBFD51041EDCD469002D3404 /* LIVenueDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFD51021EDCD00B002D3404 /* LIVenueDetailViewController.swift */; };
 		FBFD51071EDD61B0002D3404 /* LIUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFD51061EDD61B0002D3404 /* LIUIViewController.swift */; };
 		FBFD51081EDD61B0002D3404 /* LIUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFD51061EDD61B0002D3404 /* LIUIViewController.swift */; };
+		FBFD510A1EDD67E3002D3404 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FBFD51091EDD67E3002D3404 /* Localizable.strings */; };
+		FBFD510B1EDD67E3002D3404 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FBFD51091EDD67E3002D3404 /* Localizable.strings */; };
+		FBFD51131EDD67E3002D3404 /* LIVenueDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFD51121EDD67E3002D3404 /* LIVenueDetailTableViewCell.swift */; };
+		FBFD51141EDD67E3002D3404 /* LIVenueDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFD51121EDD67E3002D3404 /* LIVenueDetailTableViewCell.swift */; };
+		FBFD51161EDD67E3002D3404 /* LIVenueDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBFD51151EDD67E3002D3404 /* LIVenueDetailTableViewCell.xib */; };
+		FBFD51171EDD67E3002D3404 /* LIVenueDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBFD51151EDD67E3002D3404 /* LIVenueDetailTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,6 +176,9 @@
 		FBFD51001EDCCFF3002D3404 /* LIVenueDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LIVenueDetailViewController.xib; sourceTree = "<group>"; };
 		FBFD51021EDCD00B002D3404 /* LIVenueDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LIVenueDetailViewController.swift; sourceTree = "<group>"; };
 		FBFD51061EDD61B0002D3404 /* LIUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LIUIViewController.swift; sourceTree = "<group>"; };
+		FBFD51091EDD67E3002D3404 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		FBFD51121EDD67E3002D3404 /* LIVenueDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LIVenueDetailTableViewCell.swift; sourceTree = "<group>"; };
+		FBFD51151EDD67E3002D3404 /* LIVenueDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LIVenueDetailTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,6 +288,7 @@
 			children = (
 				FB966F8E1E75BAE200842CB8 /* LaunchScreen.storyboard */,
 				FB3FD7F51E777AD60004C49E /* LIMapViewController.xib */,
+				FBFD51151EDD67E3002D3404 /* LIVenueDetailTableViewCell.xib */,
 				FBFD51001EDCCFF3002D3404 /* LIVenueDetailViewController.xib */,
 				FB51EEAA1EC93D9B00DA143D /* LIVenueMapCell.xib */,
 			);
@@ -318,6 +327,7 @@
 		FB51EEA81EC93CE400DA143D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FBFD51121EDD67E3002D3404 /* LIVenueDetailTableViewCell.swift */,
 				FB51EEA91EC93D9B00DA143D /* LIVenueMapCell.swift */,
 			);
 			name = Views;
@@ -430,6 +440,7 @@
 			children = (
 				FBE470981E8C6E880014E8C4 /* Fixtures */,
 				FB966F911E75BAE200842CB8 /* Info.plist */,
+				FBFD51091EDD67E3002D3404 /* Localizable.strings */,
 			);
 			name = "Support Files";
 			sourceTree = "<group>";
@@ -586,6 +597,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBFD510A1EDD67E3002D3404 /* Localizable.strings in Resources */,
 				FBE470A41E972EE20014E8C4 /* LIVenue.json in Resources */,
 				FBE470A11E971C4A0014E8C4 /* LIVenueWebResponse.json in Resources */,
 				FB966F901E75BAE200842CB8 /* LaunchScreen.storyboard in Resources */,
@@ -593,6 +605,7 @@
 				FB966F8D1E75BAE200842CB8 /* Assets.xcassets in Resources */,
 				FB51EEAD1EC93D9B00DA143D /* LIVenueMapCell.xib in Resources */,
 				FBFD51011EDCCFF3002D3404 /* LIVenueDetailViewController.xib in Resources */,
+				FBFD51161EDD67E3002D3404 /* LIVenueDetailTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,7 +613,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBF4BFB11E881C4600D3E9B9 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,7 +632,9 @@
 				FBF4BFC61E883C0100D3E9B9 /* LaunchScreen.storyboard in Resources */,
 				FBF4BFC71E883C0100D3E9B9 /* LIMapViewController.xib in Resources */,
 				FBF4BFC81E883C0100D3E9B9 /* Assets.xcassets in Resources */,
+				FBFD51171EDD67E3002D3404 /* LIVenueDetailTableViewCell.xib in Resources */,
 				FB51EEAE1EC93D9B00DA143D /* LIVenueMapCell.xib in Resources */,
+				FBFD510B1EDD67E3002D3404 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -820,6 +834,7 @@
 				FBCD33AA1E99B3BF004E7897 /* Array.swift in Sources */,
 				FB4A30B81ED3D7CF00402C66 /* LIDeal.swift in Sources */,
 				FB3FD7FB1E7780660004C49E /* LIVenue.swift in Sources */,
+				FBFD51131EDD67E3002D3404 /* LIVenueDetailTableViewCell.swift in Sources */,
 				FBD83E821ED663C200FFC6C5 /* Date.swift in Sources */,
 				FB619A2A1E9952B300D7D577 /* main.swift in Sources */,
 				FB1515751E7F08EC0006C046 /* NSObject.swift in Sources */,
@@ -871,6 +886,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBF4BFBB1E883C0100D3E9B9 /* LIVenuesRequest.swift in Sources */,
+				FBFD51141EDD67E3002D3404 /* LIVenueDetailTableViewCell.swift in Sources */,
 				FB4A30BD1ED656CF00402C66 /* UIColor.swift in Sources */,
 				FBF4BFBC1E883C0100D3E9B9 /* LIVenue.swift in Sources */,
 				FB619A2B1E9952B300D7D577 /* main.swift in Sources */,

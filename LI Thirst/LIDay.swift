@@ -25,7 +25,31 @@ class LIDay : Mappable, Equatable {
   //: MARK Public Functions
   
   class func getDayOfWeek() -> LIDay {
-    return LIDay(-1, dayName: Date().dayOfWeek())
+    let dayOfWeekName = Date().dayOfWeek()
+    return LIDay(LIDay.getLIDayIDfor(dayString:dayOfWeekName), dayName: dayOfWeekName)
+  }
+  
+  //: MARK Private Functions
+  
+  class func getLIDayIDfor(dayString: String) -> NSNumber {
+    switch dayString {
+    case "Monday":
+      return 2
+    case "Tuesday":
+      return 3
+    case "Wednesday":
+      return 4
+    case "Thursday":
+      return 5
+    case "Friday":
+      return 6
+    case "Saturday":
+      return 7
+    case "Sunday":
+      return 8
+    default:
+      return 2
+    }
   }
   
   //: MARK Equaitable 

@@ -10,3 +10,11 @@ extension Array where Element: FloatingPoint {
     return isEmpty ? 0 : total / Element(count)
   }
 }
+
+extension Array where Element: Equatable {
+  mutating func remove(object: Element) {
+    if let index = index(of: object) {
+      remove(at: index)
+    }
+  }
+}

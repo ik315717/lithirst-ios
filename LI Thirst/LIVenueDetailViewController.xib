@@ -12,8 +12,8 @@
             <connections>
                 <outlet property="currentDealDescriptionLabel" destination="qA1-c8-Y4Q" id="grK-kx-Iwd"/>
                 <outlet property="currentDealTimeLeftLabel" destination="PVi-69-BeF" id="MCI-r4-3af"/>
+                <outlet property="tableView" destination="mHN-EZ-SAN" id="ZRq-2i-Ccq"/>
                 <outlet property="tableViewTitleLabel" destination="Hi2-CD-Tvk" id="5oN-BD-OrS"/>
-                <outlet property="venueDescriptionLabel" destination="A7i-R1-sfX" id="4dd-Lg-tNT"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Or4-lN-Cv9"/>
             </connections>
         </placeholder>
@@ -22,33 +22,27 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVi-69-BeF">
-                    <rect key="frame" x="166.5" y="16" width="42" height="20"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVi-69-BeF">
+                    <rect key="frame" x="188" y="25" width="0.0" height="0.0"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Come on down for $3 select draft beers, $4 well drinks, and $6 appetizers" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qA1-c8-Y4Q">
-                    <rect key="frame" x="20.5" y="52" width="335.5" height="40"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qA1-c8-Y4Q">
+                    <rect key="frame" x="188" y="41" width="0.0" height="0.0"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is going to be a super awesome description on at the bar or resteraunt. This app is going to be totally tubular dude." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7i-R1-sfX">
-                    <rect key="frame" x="19.5" y="590" width="336.5" height="61"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mHN-EZ-SAN">
-                    <rect key="frame" x="0.0" y="374" width="375" height="200"/>
+                    <rect key="frame" x="0.0" y="342" width="375" height="325"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="200" id="hkf-Rx-ODq"/>
+                        <constraint firstAttribute="height" constant="325" id="hkf-Rx-ODq"/>
                     </constraints>
                 </tableView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other Deals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hi2-CD-Tvk">
-                    <rect key="frame" x="141.5" y="345.5" width="91" height="20.5"/>
+                    <rect key="frame" x="142" y="313" width="91" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -56,19 +50,15 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="A7i-R1-sfX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="3dq-rn-Ogs"/>
                 <constraint firstItem="PVi-69-BeF" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="8Un-A5-pfR"/>
                 <constraint firstItem="qA1-c8-Y4Q" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="9RU-LV-LmA"/>
-                <constraint firstItem="A7i-R1-sfX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="BdQ-xA-dDs"/>
-                <constraint firstItem="PVi-69-BeF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="C7M-a5-Rk9"/>
-                <constraint firstItem="A7i-R1-sfX" firstAttribute="top" secondItem="mHN-EZ-SAN" secondAttribute="bottom" constant="16" id="PtE-7b-vbN"/>
-                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="A7i-R1-sfX" secondAttribute="trailing" constant="8" id="SPb-tH-qag"/>
-                <constraint firstAttribute="bottom" secondItem="A7i-R1-sfX" secondAttribute="bottom" constant="16" id="WBo-Ew-kkj"/>
+                <constraint firstItem="PVi-69-BeF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="C7M-a5-Rk9"/>
                 <constraint firstItem="mHN-EZ-SAN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cBW-vG-gHO"/>
                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qA1-c8-Y4Q" secondAttribute="trailing" constant="16" id="cve-No-4mK"/>
                 <constraint firstItem="mHN-EZ-SAN" firstAttribute="top" secondItem="Hi2-CD-Tvk" secondAttribute="bottom" constant="8" id="i4Y-Z1-8gf"/>
                 <constraint firstAttribute="trailing" secondItem="mHN-EZ-SAN" secondAttribute="trailing" id="nU6-v6-MXA"/>
                 <constraint firstItem="qA1-c8-Y4Q" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="rYa-4d-Md1"/>
+                <constraint firstAttribute="bottom" secondItem="mHN-EZ-SAN" secondAttribute="bottom" id="ssr-jl-u0r"/>
                 <constraint firstItem="qA1-c8-Y4Q" firstAttribute="top" secondItem="PVi-69-BeF" secondAttribute="bottom" constant="16" id="sxp-Ai-cAr"/>
                 <constraint firstItem="Hi2-CD-Tvk" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="v03-oW-Qeu"/>
             </constraints>

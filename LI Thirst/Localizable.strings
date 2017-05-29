@@ -1,0 +1,15 @@
+/* 
+  localized.strings
+  LI Thirst
+*/
+
+/* Global */
+"app_name" = "LI Thirst";
+
+/* Map View Controller */
+
+
+/* Venue Details Controller */
+"venue_detail_view_hours_left_format" = "%1.0f hrs left";
+"venue_detail_view_back_button_title" = "Map";
+"venue_detail_cell_time_deal_format" = "%@\n%@ - %@"
