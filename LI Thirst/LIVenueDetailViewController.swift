@@ -76,7 +76,20 @@ class LIVenueDetailViewController: LIUIViewController,
         self.currentDealDescriptionLabel.text = dealDescription
         self.currentDealDescriptionLabel.font = UIFont.systemFont(ofSize: 20.0, weight: 0.0)
       }
+      
+      self.tableViewTitleLabel.font = UIFont.systemFont(ofSize: 22.0)
     }
+  }
+  
+  // MARK: TableView Delegate Methods
+  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let deal = self.otherDeals[indexPath.row]
+    let cell = tableView.cellForRow(at: indexPath) as! LIVenueDetailTableViewCell
+    
+    cell.isExpanded = !cell.isExpanded
+
+    tableView.reloadData()
   }
   
   // MARK: TableView DataSource Methdos
@@ -94,12 +107,21 @@ class LIVenueDetailViewController: LIUIViewController,
   }
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell: LIVenueDetailTableViewCell = tableView.dequeueReusableCell(withIdentifier: LIVenueDetailTableViewCell.className) as! LIVenueDetailTableViewCell
+    let cell: LIVenueDetailTableViewCell =
+      tableView.dequeueReusableCell(withIdentifier: LIVenueDetailTableViewCell.className)
+        as! LIVenueDetailTableViewCell
     
     let deal = self.otherDeals[indexPath.row]
     cell.dealNameLabel.text = deal.title
-    
     cell.timeAvailableString(deal: deal)
+    
+    if cell.isExpanded {
+      cell.dealDescriptionLabel.text = deal.description
+      cell.dealDescriptionTopSpaceConstraint.constant = 8
+    } else {
+      cell.dealDescriptionLabel.text = ""
+      cell.dealDescriptionTopSpaceConstraint.constant = 0
+    }
     
     return cell
   }

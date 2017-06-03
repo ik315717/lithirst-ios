@@ -11,49 +11,62 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LIVenueDetailTableViewCell" id="tCK-el-opM" customClass="LIVenueDetailTableViewCell" customModule="LI_Thirst" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LIVenueDetailTableViewCell" rowHeight="107" id="tCK-el-opM" customClass="LIVenueDetailTableViewCell" customModule="LI_Thirst" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="387" height="107"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tCK-el-opM" id="4i2-jl-DTp">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                <rect key="frame" x="0.0" y="0.0" width="387" height="107"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tableView_expandable_button" translatesAutoresizingMaskIntoConstraints="NO" id="Opk-7q-97h">
-                        <rect key="frame" x="8" y="9" width="40" height="40"/>
+                        <rect key="frame" x="8" y="16" width="25" height="25"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="40" id="Csp-RN-fHb"/>
-                            <constraint firstAttribute="height" constant="40" id="QwL-35-7sm"/>
+                            <constraint firstAttribute="width" constant="25" id="Csp-RN-fHb"/>
+                            <constraint firstAttribute="height" constant="25" id="QwL-35-7sm"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taco Tuesday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTd-We-jr2">
-                        <rect key="frame" x="56" y="19" width="105.5" height="20.5"/>
+                        <rect key="frame" x="41" y="18.5" width="105.5" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jM9-mC-21T">
-                        <rect key="frame" x="328" y="22.5" width="31" height="14.5"/>
+                        <rect key="frame" x="340" y="21.5" width="31" height="14.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZu-T5-b4T">
+                        <rect key="frame" x="16" y="41" width="355" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="jM9-mC-21T" firstAttribute="centerY" secondItem="4i2-jl-DTp" secondAttribute="centerY" id="7dK-Z3-LzS"/>
+                    <constraint firstItem="EZu-T5-b4T" firstAttribute="top" secondItem="Opk-7q-97h" secondAttribute="bottom" id="5RK-SI-8gw"/>
+                    <constraint firstItem="wTd-We-jr2" firstAttribute="centerY" secondItem="Opk-7q-97h" secondAttribute="centerY" id="6S9-bk-p5c"/>
+                    <constraint firstItem="jM9-mC-21T" firstAttribute="centerY" secondItem="Opk-7q-97h" secondAttribute="centerY" id="6X8-SN-14H"/>
                     <constraint firstAttribute="trailingMargin" secondItem="jM9-mC-21T" secondAttribute="trailing" constant="8" id="Hhn-EP-lym"/>
                     <constraint firstItem="Opk-7q-97h" firstAttribute="leading" secondItem="4i2-jl-DTp" secondAttribute="leading" constant="8" id="Jth-wv-if8"/>
+                    <constraint firstItem="Opk-7q-97h" firstAttribute="top" secondItem="4i2-jl-DTp" secondAttribute="top" constant="16" id="Ldx-dS-bWs"/>
                     <constraint firstItem="jM9-mC-21T" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wTd-We-jr2" secondAttribute="trailing" constant="8" id="W9g-Gv-tRd"/>
+                    <constraint firstItem="EZu-T5-b4T" firstAttribute="centerX" secondItem="4i2-jl-DTp" secondAttribute="centerX" id="c6Q-zo-oIw"/>
                     <constraint firstItem="wTd-We-jr2" firstAttribute="leading" secondItem="Opk-7q-97h" secondAttribute="trailing" constant="8" id="hE1-PX-UFD"/>
-                    <constraint firstItem="Opk-7q-97h" firstAttribute="centerY" secondItem="4i2-jl-DTp" secondAttribute="centerY" id="lHw-np-729"/>
-                    <constraint firstItem="wTd-We-jr2" firstAttribute="centerY" secondItem="4i2-jl-DTp" secondAttribute="centerY" id="ni5-Vj-5Qh"/>
+                    <constraint firstItem="EZu-T5-b4T" firstAttribute="leading" secondItem="4i2-jl-DTp" secondAttribute="leading" constant="16" id="mFV-Gr-kIy"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="EZu-T5-b4T" secondAttribute="bottom" constant="8" id="pw9-mA-lw3"/>
+                    <constraint firstAttribute="trailing" secondItem="EZu-T5-b4T" secondAttribute="trailing" constant="16" id="rA5-pM-Q1C"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="dealDescriptionLabel" destination="EZu-T5-b4T" id="rsQ-eB-E94"/>
+                <outlet property="dealDescriptionTopSpaceConstraint" destination="5RK-SI-8gw" id="1yQ-ny-JAh"/>
                 <outlet property="dealExpiration" destination="jM9-mC-21T" id="6Ar-BT-7Os"/>
                 <outlet property="dealNameLabel" destination="wTd-We-jr2" id="HdW-5t-b32"/>
                 <outlet property="expandableButtonImageView" destination="Opk-7q-97h" id="Qnu-6C-6ad"/>
             </connections>
-            <point key="canvasLocation" x="14.5" y="-94"/>
+            <point key="canvasLocation" x="20.5" y="-70.5"/>
         </tableViewCell>
     </objects>
     <resources>

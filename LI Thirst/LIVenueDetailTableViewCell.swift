@@ -4,7 +4,11 @@ class LIVenueDetailTableViewCell: UITableViewCell {
  
   @IBOutlet var dealExpiration: UILabel!
   @IBOutlet var dealNameLabel: UILabel!
+  @IBOutlet var dealDescriptionLabel: UILabel!
   @IBOutlet var expandableButtonImageView: UIImageView!
+  @IBOutlet var dealDescriptionTopSpaceConstraint: NSLayoutConstraint!
+  
+  var isExpanded : Bool = false
 
   func timeAvailableString(deal: LIDeal) {
     var startTimeFormatted : String = ""
@@ -16,7 +20,7 @@ class LIVenueDetailTableViewCell: UITableViewCell {
     }
     
     let dateFormatter = DateFormatter()
-    dateFormatter.dateFormat = "h a"
+    dateFormatter.dateFormat = "h:mm a"
     dateFormatter.timeZone = TimeZone(identifier: "UTC")
     
     if let startTime = deal.startTimeAdjustedForDay, let endTime = deal.endTimeAdjustedForDay {
