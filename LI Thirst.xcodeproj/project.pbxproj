@@ -39,6 +39,10 @@
 		FB6AD9971E870CD600A3148E /* Pods_LI_Thirst.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6AD9961E870CD600A3148E /* Pods_LI_Thirst.framework */; };
 		FB81B9CB1E835A67009CF259 /* LICustomMapTransforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB81B9CA1E835A67009CF259 /* LICustomMapTransforms.swift */; };
 		FB919BAF1EE46B930068F521 /* LIVenueDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBFD51001EDCCFF3002D3404 /* LIVenueDetailViewController.xib */; };
+		FB919BB11EE49A6A0068F521 /* LIMathHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB919BB01EE49A6A0068F521 /* LIMathHelper.swift */; };
+		FB919BB21EE49A6A0068F521 /* LIMathHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB919BB01EE49A6A0068F521 /* LIMathHelper.swift */; };
+		FB919BB41EE4A9720068F521 /* LIPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB919BB31EE4A9720068F521 /* LIPointAnnotation.swift */; };
+		FB919BB51EE4A9720068F521 /* LIPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB919BB31EE4A9720068F521 /* LIPointAnnotation.swift */; };
 		FB95CCB41ED66F48000F3A73 /* LIDateTransformers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB95CCB31ED66F48000F3A73 /* LIDateTransformers.swift */; };
 		FB95CCB51ED66F7C000F3A73 /* LIDateTransformers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB95CCB31ED66F48000F3A73 /* LIDateTransformers.swift */; };
 		FB966F831E75BAE200842CB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB966F821E75BAE200842CB8 /* AppDelegate.swift */; };
@@ -142,6 +146,8 @@
 		FB619A2C1E9957A400D7D577 /* TestingAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
 		FB6AD9961E870CD600A3148E /* Pods_LI_Thirst.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_LI_Thirst.framework; path = "../../Library/Developer/Xcode/DerivedData/LI_Thirst-dxmiqpnksxhgmpcyloctfnlcdzfy/Build/Products/Debug-iphonesimulator/Pods_LI_Thirst.framework"; sourceTree = "<group>"; };
 		FB81B9CA1E835A67009CF259 /* LICustomMapTransforms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LICustomMapTransforms.swift; sourceTree = "<group>"; };
+		FB919BB01EE49A6A0068F521 /* LIMathHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LIMathHelper.swift; sourceTree = "<group>"; };
+		FB919BB31EE4A9720068F521 /* LIPointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LIPointAnnotation.swift; sourceTree = "<group>"; };
 		FB95CCB31ED66F48000F3A73 /* LIDateTransformers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LIDateTransformers.swift; sourceTree = "<group>"; };
 		FB966F7F1E75BAE200842CB8 /* LI Thirst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LI Thirst.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB966F821E75BAE200842CB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -308,6 +314,7 @@
 		FB51EEA81EC93CE400DA143D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FB919BB31EE4A9720068F521 /* LIPointAnnotation.swift */,
 				FBFD51121EDD67E3002D3404 /* LIVenueDetailTableViewCell.swift */,
 				FB51EEA91EC93D9B00DA143D /* LIVenueMapCell.swift */,
 			);
@@ -328,12 +335,12 @@
 			children = (
 				AD26651D20AF40CFBD5D16AD /* Frameworks */,
 				FB966F811E75BAE200842CB8 /* LI Thirst */,
+				FB619A291E9952B300D7D577 /* main.swift */,
 				CF534AC169F84C8A5D1350BF /* Pods */,
 				FB966F801E75BAE200842CB8 /* Products */,
 				FB4EED5F1E883E5A00F8A898 /* Testing App */,
 				FB966FA41E75BAE200842CB8 /* UI Tests */,
 				FB966F991E75BAE200842CB8 /* Unit Tests */,
-				FB619A291E9952B300D7D577 /* main.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -422,6 +429,7 @@
 				FBE470981E8C6E880014E8C4 /* Fixtures */,
 				FB966F911E75BAE200842CB8 /* Info.plist */,
 				FBFD51091EDD67E3002D3404 /* Localizable.strings */,
+				FB919BB01EE49A6A0068F521 /* LIMathHelper.swift */,
 			);
 			name = "Support Files";
 			sourceTree = "<group>";
@@ -811,6 +819,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBFD51031EDCD00B002D3404 /* LIVenueDetailViewController.swift in Sources */,
+				FB919BB11EE49A6A0068F521 /* LIMathHelper.swift in Sources */,
 				FBFD51071EDD61B0002D3404 /* LIUIViewController.swift in Sources */,
 				FB3FD7FD1E7784790004C49E /* LIVenuesRequest.swift in Sources */,
 				FBCD33AA1E99B3BF004E7897 /* Array.swift in Sources */,
@@ -830,6 +839,7 @@
 				FB619A281E99519000D7D577 /* LIMapViewController.swift in Sources */,
 				FB26B2CF1EDB1BAC00354159 /* LIConstants.swift in Sources */,
 				FB81B9CB1E835A67009CF259 /* LICustomMapTransforms.swift in Sources */,
+				FB919BB41EE4A9720068F521 /* LIPointAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -877,8 +887,10 @@
 				FBF4BFBE1E883C0100D3E9B9 /* NSObject.swift in Sources */,
 				FB26B2D41EDB1DEE00354159 /* LIDay.swift in Sources */,
 				FB619A2E1E9957A400D7D577 /* TestingAppDelegate.swift in Sources */,
+				FB919BB51EE4A9720068F521 /* LIPointAnnotation.swift in Sources */,
 				FBFD51081EDD61B0002D3404 /* LIUIViewController.swift in Sources */,
 				FB95CCB51ED66F7C000F3A73 /* LIDateTransformers.swift in Sources */,
+				FB919BB21EE49A6A0068F521 /* LIMathHelper.swift in Sources */,
 				FBFD51041EDCD469002D3404 /* LIVenueDetailViewController.swift in Sources */,
 				FBCD33AB1E99B3BF004E7897 /* Array.swift in Sources */,
 				FBF4BFC01E883C0100D3E9B9 /* LIAPIRequest.swift in Sources */,

@@ -7,7 +7,7 @@
 "app_name" = "LI Thirst";
 
 /* Map View Controller */
-
+"map_table_view_distance_format" = "%1.1f Miles";
 
 /* Venue Details Controller */
 "venue_detail_view_hours_left_format" = "%1.0f hrs left";

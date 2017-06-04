@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -14,34 +15,43 @@
             <rect key="frame" x="0.0" y="0.0" width="401" height="100"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="401" height="100"/>
+                <rect key="frame" x="0.0" y="0.0" width="401" height="99"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nate's Bar and Grill" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHw-1p-3dz">
-                        <rect key="frame" x="8" y="8" width="385" height="23"/>
+                        <rect key="frame" x="8" y="12" width="163" height="23"/>
                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 Dollar Buds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5k8-Yu-yMG">
-                        <rect key="frame" x="8" y="39" width="385" height="21"/>
+                        <rect key="frame" x="8" y="43" width="385" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMK-Dr-eHL">
+                        <rect key="frame" x="393" y="12" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="YMK-Dr-eHL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="2Kj-RE-Yjw"/>
                     <constraint firstAttribute="trailing" secondItem="5k8-Yu-yMG" secondAttribute="trailing" constant="8" id="31W-6T-joK"/>
+                    <constraint firstItem="YMK-Dr-eHL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="yHw-1p-3dz" secondAttribute="trailing" constant="8" id="3ph-Tv-7Ke"/>
                     <constraint firstItem="5k8-Yu-yMG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="8sl-83-pa4"/>
                     <constraint firstItem="yHw-1p-3dz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="IQi-um-UmT"/>
-                    <constraint firstItem="yHw-1p-3dz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="NxD-Bf-rm0"/>
-                    <constraint firstAttribute="trailing" secondItem="yHw-1p-3dz" secondAttribute="trailing" constant="8" id="OIv-z4-lhp"/>
+                    <constraint firstItem="yHw-1p-3dz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="NxD-Bf-rm0"/>
+                    <constraint firstItem="YMK-Dr-eHL" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Ogt-N5-mab"/>
                     <constraint firstItem="5k8-Yu-yMG" firstAttribute="top" secondItem="yHw-1p-3dz" secondAttribute="bottom" constant="8" id="TZV-s7-NoG"/>
                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="5k8-Yu-yMG" secondAttribute="bottom" constant="8" id="lGc-0W-PZa"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="venueDealLabel" destination="5k8-Yu-yMG" id="TMB-Ze-CXW"/>
+                <outlet property="venueDistanceLabel" destination="YMK-Dr-eHL" id="IR5-K0-miT"/>
                 <outlet property="venueLabel" destination="yHw-1p-3dz" id="Kbq-LT-1rr"/>
             </connections>
             <point key="canvasLocation" x="66.5" y="87"/>

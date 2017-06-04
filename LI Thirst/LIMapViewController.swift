@@ -3,6 +3,7 @@ import MapKit
 
 class LIMapViewController: LIUIViewController,
                            CLLocationManagerDelegate,
+                           MKMapViewDelegate,
                            UISearchBarDelegate,
                            UITableViewDataSource,
                            UITableViewDelegate {
@@ -28,7 +29,7 @@ class LIMapViewController: LIUIViewController,
   
   // Static Variable
   let locationSpan = MKCoordinateSpanMake(0.05, 0.05)
-  let searchSpan = MKCoordinateSpanMake(0.025, 0.025)
+  let searchSpan = MKCoordinateSpanMake(0.015, 0.015)
   
   // Table View Heights
   var tableViewBottomHeight: CGFloat = 45.0
@@ -42,6 +43,7 @@ class LIMapViewController: LIUIViewController,
     
     self.getCurrentLocation()
     setUpMapView()
+    self.mapView.delegate = self
     self.mapView.showsUserLocation = true
     
     self.tableView.dataSource = self
@@ -54,6 +56,7 @@ class LIMapViewController: LIUIViewController,
     let apiRequest = LIVenuesRequest.init()
     apiRequest.getVenues { venues in
       self.venueList = venues
+      self.sortVenueListfromUserLocation()
       
       self.addVenuesToMap()
       self.tableView.reloadData()
@@ -77,37 +80,63 @@ class LIMapViewController: LIUIViewController,
     }
   }
   
+  // MARK: Navigation
+  
+  func pushDetailsViewControllerWith(venue: LIVenue?) {
+    if let selectedVenue = venue {
+      let venueDetailsViewController = LIVenueDetailViewController(venue: selectedVenue)
+      self.navigationController?.pushViewController(venueDetailsViewController, animated: true)
+    }
+  }
+  
+  // MARK: MKMapView Delegate Methods 
+  
+  func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+    if (annotation is MKUserLocation) {
+      return nil
+    }
+    
+    let annotationView = MKPinAnnotationView()
+    annotationView.annotation = annotation
+    annotationView.canShowCallout = true
+    annotationView.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+    
+    return annotationView
+  }
+  
+  func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+    
+    //Remove any previous Gesture Recognizers
+    for recognizer in view.gestureRecognizers ?? [] {
+      view.removeGestureRecognizer(recognizer)
+    }
+    
+    let gestureRecognizer =
+      UITapGestureRecognizer(target: self, action:#selector(LIMapViewController.calloutTapped))
+    view.addGestureRecognizer(gestureRecognizer)
+  }
+  
+  func calloutTapped(sender:UITapGestureRecognizer) {
+    guard let annotation = (sender.view as? MKAnnotationView)?.annotation as? LIPointAnnotation else { return }
+    let view = sender.view as? MKAnnotationView
+    
+    if (view?.isSelected)! {
+      self.pushDetailsViewControllerWith(venue: annotation.venue)
+    }
+  }
+  
   // MARK: Map Private Methods
-  
-  func setUpMapView() {
-    let panGesture = UIPanGestureRecognizer(target: self, action: #selector(LIMapViewController.handleMapPanGesture))
-    mapView.addGestureRecognizer(panGesture)
-  }
-  
-  func handleMapPanGesture() {
-    locationManger.stopUpdatingLocation()
-  }
   
   func addVenuesToMap() {
     for venue in venueList {
-      let annotation = MKPointAnnotation()
+      let annotation = LIPointAnnotation()
       
       if let latitude = venue.latitude, let longitude = venue.longitude {
         let coordinate = CLLocationCoordinate2DMake(latitude, longitude)
         annotation.coordinate = coordinate
-        
+        annotation.title = venue.name
+        annotation.venue = venue
         mapView.addAnnotation(annotation)
-      }
-    }
-  }
-  
-  func calculateRegionForVenues() {
-    var coordinateList : [CLLocationCoordinate2D] = []
-    
-    for venue in venueList {
-      if let latitude = venue.latitude, let longitude = venue.longitude {
-        let coordinate = CLLocationCoordinate2DMake(latitude, longitude)
-        coordinateList.append(coordinate)
       }
     }
   }
@@ -123,9 +152,35 @@ class LIMapViewController: LIUIViewController,
     }
   }
   
+  func handleMapPanGesture() {
+    locationManger.stopUpdatingLocation()
+  }
+  
+  func sortVenueListfromUserLocation() {
+    if let locationCoordinate = self.userLocation?.coordinate,
+       let location = self.userLocation,
+       self.venueList.count > 0 {
+      
+      func distance(to location: CLLocation) -> CLLocationDistance {
+        return location.distance(from: location)
+      }
+      
+      self.venueList = self.venueList.sorted(by: { (venue1, venue2) -> Bool in
+        venue1.distance(to: location) < venue2.distance(to: location)
+      })
+      
+      self.tableView.reloadData()
+    }
+  }
+  
   func setMapLocation(locationToPanTo location: CLLocation, cordinateSpan: MKCoordinateSpan) {
     let region = MKCoordinateRegion(center: location.coordinate, span: cordinateSpan)
     mapView.setRegion(region, animated: true)
+  }
+  
+  func setUpMapView() {
+    let panGesture = UIPanGestureRecognizer(target: self, action: #selector(LIMapViewController.handleMapPanGesture))
+    mapView.addGestureRecognizer(panGesture)
   }
   
   // MARK: Location Manager Delegate
@@ -148,6 +203,7 @@ class LIMapViewController: LIUIViewController,
     
     if let location = locations.first {
       userLocation = location
+      self.sortVenueListfromUserLocation()
     }
   }
   
@@ -158,10 +214,7 @@ class LIMapViewController: LIUIViewController,
   // MARK: TableView Delegate Methods
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    print("Selected \(self.venueList[indexPath.row].name)")
-    
-    let venueDetailsViewController = LIVenueDetailViewController(venue: self.venueList[indexPath.row])
-    self.navigationController?.pushViewController(venueDetailsViewController, animated: true)
+    self.pushDetailsViewControllerWith(venue: self.venueList[indexPath.row])
   }
   
   // MARK: TableView DataSource Methdos
@@ -181,8 +234,21 @@ class LIMapViewController: LIUIViewController,
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell: LIVenueMapCell = tableView.dequeueReusableCell(withIdentifier: LIVenueMapCell.className) as! LIVenueMapCell
     
-    cell.venueLabel.text = self.venueList[indexPath.row].name
-    cell.venueDealLabel.text = self.venueList[indexPath.row].activeDealTitle
+    let venue : LIVenue = self.venueList[indexPath.row]
+    cell.venueLabel.text = venue.name
+    cell.venueDealLabel.text = venue.activeDealTitle
+    if let location = self.userLocation {
+      let distance = venue.distance(to: location)
+      
+      if distance != Double(DBL_MAX) {
+        let miles = LIMathHelper.converttoMiles(from: distance)
+        let distanceString = String(format: NSLocalizedString("map_table_view_distance_format",
+                                                              comment: ""), Float(miles))
+        cell.venueDistanceLabel.text = distanceString
+      }
+
+    }
+
     
     return cell
   }
