@@ -71,7 +71,7 @@ class LIVenueDetailViewController: LIUIViewController,
          let dealDescription = activeDeal?.description {
         let hoursLeftString = NSLocalizedString("venue_detail_view_hours_left_format", comment: "")
         self.currentDealTimeLeftLabel.text = String.init(format: hoursLeftString, 3.4)
-        self.currentDealTimeLeftLabel.font = UIFont.systemFont(ofSize: 26.0, weight: 0.0)
+        self.currentDealTimeLeftLabel.font = UIFont.systemFont(ofSize: 26.0, weight: 0.175)
         
         self.currentDealDescriptionLabel.text = dealDescription
         self.currentDealDescriptionLabel.font = UIFont.systemFont(ofSize: 20.0, weight: 0.0)
@@ -84,7 +84,6 @@ class LIVenueDetailViewController: LIUIViewController,
   // MARK: TableView Delegate Methods
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    let deal = self.otherDeals[indexPath.row]
     let cell = tableView.cellForRow(at: indexPath) as! LIVenueDetailTableViewCell
     
     cell.isExpanded = !cell.isExpanded

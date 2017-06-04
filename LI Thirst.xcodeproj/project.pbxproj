@@ -38,6 +38,7 @@
 		FB619A311E995B1200D7D577 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB966F821E75BAE200842CB8 /* AppDelegate.swift */; };
 		FB6AD9971E870CD600A3148E /* Pods_LI_Thirst.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6AD9961E870CD600A3148E /* Pods_LI_Thirst.framework */; };
 		FB81B9CB1E835A67009CF259 /* LICustomMapTransforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB81B9CA1E835A67009CF259 /* LICustomMapTransforms.swift */; };
+		FB919BAF1EE46B930068F521 /* LIVenueDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBFD51001EDCCFF3002D3404 /* LIVenueDetailViewController.xib */; };
 		FB95CCB41ED66F48000F3A73 /* LIDateTransformers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB95CCB31ED66F48000F3A73 /* LIDateTransformers.swift */; };
 		FB95CCB51ED66F7C000F3A73 /* LIDateTransformers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB95CCB31ED66F48000F3A73 /* LIDateTransformers.swift */; };
 		FB966F831E75BAE200842CB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB966F821E75BAE200842CB8 /* AppDelegate.swift */; };
@@ -607,6 +608,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB919BAF1EE46B930068F521 /* LIVenueDetailViewController.xib in Resources */,
 				FBE470A51E972EF30014E8C4 /* LIVenue.json in Resources */,
 				FBE470A21E971E2A0014E8C4 /* LIVenueWebResponse.json in Resources */,
 				FBF4BFC61E883C0100D3E9B9 /* LaunchScreen.storyboard in Resources */,

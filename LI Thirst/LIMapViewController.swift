@@ -26,6 +26,10 @@ class LIMapViewController: LIUIViewController,
   var userLocationUpdates : [CLLocationDistance] = []
   var venueList: Array<LIVenue> = []
   
+  // Static Variable
+  let locationSpan = MKCoordinateSpanMake(0.05, 0.05)
+  let searchSpan = MKCoordinateSpanMake(0.025, 0.025)
+  
   // Table View Heights
   var tableViewBottomHeight: CGFloat = 45.0
   var tableViewNormalHeight: CGFloat = 130.0
@@ -60,6 +64,7 @@ class LIMapViewController: LIUIViewController,
     super.styleViews()
     
     self.setnavigationBar(title: NSLocalizedString("app_name", comment: ""))
+    self.tableView.tableFooterView = UIView()
     self.tableViewContainerView.layer.cornerRadius = 20.0
     self.tableViewContainerView.clipsToBounds = true
   }
@@ -68,7 +73,7 @@ class LIMapViewController: LIUIViewController,
   
   @IBAction func userLocationButtonPress(_ sender: UIButton) {
     if let location = userLocation {
-      setMapLocation(locationToPanTo: location)
+      setMapLocation(locationToPanTo: location, cordinateSpan: self.locationSpan)
     }
   }
   
@@ -118,9 +123,8 @@ class LIMapViewController: LIUIViewController,
     }
   }
   
-  func setMapLocation(locationToPanTo location: CLLocation) {
-    let span = MKCoordinateSpanMake(0.05, 0.05)
-    let region = MKCoordinateRegion(center: location.coordinate, span: span)
+  func setMapLocation(locationToPanTo location: CLLocation, cordinateSpan: MKCoordinateSpan) {
+    let region = MKCoordinateRegion(center: location.coordinate, span: cordinateSpan)
     mapView.setRegion(region, animated: true)
   }
   
@@ -131,7 +135,7 @@ class LIMapViewController: LIUIViewController,
     if let pastLocation = userLocation, let location = locations.first {
       let meters = location.distance(from: pastLocation)
       if meters > 10 || userLocationUpdates.count < 5 {
-        setMapLocation(locationToPanTo: location)
+        setMapLocation(locationToPanTo: location, cordinateSpan: self.locationSpan)
       }
 
       
@@ -226,7 +230,7 @@ class LIMapViewController: LIUIViewController,
         if let placeMark = placeMarkArray?.first {
           if let location = placeMark.location, let weakSelfRef = weakSelf {
             weakSelfRef.locationManger.stopUpdatingLocation()
-            weakSelfRef.setMapLocation(locationToPanTo: location)
+            weakSelfRef.setMapLocation(locationToPanTo: location, cordinateSpan: self.searchSpan)
           }
         }
       }

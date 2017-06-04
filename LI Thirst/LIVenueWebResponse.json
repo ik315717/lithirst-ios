@@ -1,35 +1,241 @@
-{
-  "is_error": false,
-  "error_type": "",
-  "error_description": "",
-  "venues": [
-             {
-             "venue_id": "1",
-             "name": "Ned Devine's",
-             "address": "Faneuil Hall Marketplace, 1 Faneuil Hall Marketplace, Boston, MA 02109",
-             "latitude": "42.359799",
-             "longitude": "-71.054460"
-             },
-             {
-             "venue_id": "2",
-             "name": "Howl at the Moon Boston",
-             "address": "184 High St, Boston, MA 02110",
-             "latitude": "42.356649",
-             "longitude": "-71.052625"
-             },
-             {
-             "venue_id": "3",
-             "name": "Granary Tavern",
-             "address": "170 Milk St, Boston, MA 02110",
-             "latitude": "42.358783",
-             "longitude": "-71.052531"
-             },
-             {
-             "venue_id": "4",
-             "name": "The Burren",
-             "address": "247 Elm St, Somerville, MA 02144",
-             "latitude": "42.3954382",
-             "longitude": "-71.1239446"
-             }
-             ]
-}
+ [
+  {
+  "id": 27,
+  "name": "Ned Devine's",
+  "address": "Faneuil Hall Marketplace, 1 Faneuil Hall Marketplace",
+  "city": "Boston",
+  "state": "Massachusetts",
+  "latitude": "42.359799",
+  "longitude": "-71.054460",
+  "created_at": "2017-05-18T16:12:06.528Z",
+  "updated_at": "2017-05-18T16:36:58.049Z",
+  "deals": [
+            {
+            "id": 63,
+            "title": "Sunday Brunch",
+            "description": "$34 per person: Unlimited Bloody Marys, Mimosas, Champagne, Soda, Coffee and Tea. Buffet including; Carving Station,\r\nMade to Order Omelettes, Shrimp,\r\nSmoked Salmon,\r\nEggs Benedict, Crisp Bacon, Sausage, Waffles,\r\nChef\u2019s Selection of Hot Chafing Dishes\r\nCold Salads and Platters\r\nBagels, Muffins, Pastries & Danishes,\r\nFresh Fruit Platter,\r\nDessert Table with Cakes, Puddings, Croissants, Brownies & Cookies",
+            "expiration": "2018-06-04",
+            "days": [
+                     {
+                     "id": 8,
+                     "name": "Sunday"
+                     }
+                     ],
+            "start_time": "11:30 AM",
+            "hours_active": "3.0"
+            },
+            {
+            "id": 174,
+            "title": "Happy Hour",
+            "description": "Complimentary Buffet, Discounted house drinks, domestic beer and wine.",
+            "expiration": "2018-06-01",
+            "days": [
+                     {
+                     "id": 6,
+                     "name": "Friday"
+                     }
+                     ],
+            "start_time": "04:00 PM",
+            "hours_active": "3.0"
+            },
+            {
+            "id": 62,
+            "title": "Happy Hour",
+            "description": "Discounted house drinks, domestic beer and wine.",
+            "expiration": "2018-06-01",
+            "days": [
+                     {
+                     "id": 2,
+                     "name": "Monday"
+                     },
+                     {
+                     "id": 3,
+                     "name": "Tuesday"
+                     },
+                     {
+                     "id": 4,
+                     "name": "Wednesday"
+                     },
+                     {
+                     "id": 5,
+                     "name": "Thursday"
+                     }
+                     ],
+            "start_time": "04:00 PM",
+            "hours_active": "3.0"
+            }
+            ]
+  },
+  {
+  "id": 28,
+  "name": "Howl at the Moon Boston",
+  "address": "184 High St",
+  "city": "Boston",
+  "state": "Massachusetts",
+  "latitude": "42.356649",
+  "longitude": "-71.052625",
+  "created_at": "2017-05-18T16:14:40.633Z",
+  "updated_at": "2017-05-18T16:31:51.801Z",
+  "deals": [
+            {
+            "id": 64,
+            "title": "Lunch Special",
+            "description": "$11 Lunch Bento Box Served with Rice, Miso Soup, Salad, California Roll & Shumai with your choice of Meat, Tofu or Vegetable",
+            "expiration": "2018-05-29",
+            "days": [
+                     {
+                     "id": 2,
+                     "name": "Monday"
+                     },
+                     {
+                     "id": 3,
+                     "name": "Tuesday"
+                     },
+                     {
+                     "id": 4,
+                     "name": "Wednesday"
+                     },
+                     {
+                     "id": 5,
+                     "name": "Thursday"
+                     },
+                     {
+                     "id": 6,
+                     "name": "Friday"
+                     },
+                     {
+                     "id": 7,
+                     "name": "Saturday"
+                     }
+                     ],
+            "start_time": "11:30 AM",
+            "hours_active": "3.0"
+            }
+            ]
+  },
+  {
+  "id": 2,
+  "name": "Granary Tavern",
+  "address": "170 Milk St",
+  "city": "Boston",
+  "state": "Massachusetts",
+  "latitude": "42.358783",
+  "longitude": "-71.052531",
+  "created_at": "2017-05-18T15:17:25.927Z",
+  "updated_at": "2017-05-18T16:32:01.600Z",
+  "deals": [
+            {
+            "id": 175,
+            "title": "Lunch Special",
+            "description": "$13 Includes 4 apps (2 styles) and soup or salad or side.",
+            "expiration": "2018-06-01",
+            "days": [
+                     {
+                     "id": 2,
+                     "name": "Monday"
+                     },
+                     {
+                     "id": 3,
+                     "name": "Tuesday"
+                     },
+                     {
+                     "id": 4,
+                     "name": "Wednesday"
+                     },
+                     {
+                     "id": 5,
+                     "name": "Thursday"
+                     }
+                     ],
+            "start_time": "12:00 PM",
+            "hours_active": "3.0"
+            },
+            {
+            "id": 176,
+            "title": "Lunch Special",
+            "description": "$13. Includes 4 apps (2 styles) and soup or salad or side",
+            "expiration": "2018-06-01",
+            "days": [
+                     {
+                     "id": 6,
+                     "name": "Friday"
+                     }
+                     ],
+            "start_time": "11:30 AM",
+            "hours_active": "3.5"
+            },
+            {
+            "id": 177,
+            "title": "Happy Hour",
+            "description": "1\/2 off fish tacos and fish sticks. $5 Traditional and Spicy Whiskey Gingers. $2 off all craft beer and all mixed drinks.",
+            "expiration": "2018-06-01",
+            "days": [
+                     {
+                     "id": 2,
+                     "name": "Monday"
+                     },
+                     {
+                     "id": 3,
+                     "name": "Tuesday"
+                     },
+                     {
+                     "id": 4,
+                     "name": "Wednesday"
+                     },
+                     {
+                     "id": 5,
+                     "name": "Thursday"
+                     },
+                     {
+                     "id": 6,
+                     "name": "Friday"
+                     }
+                     ],
+            "start_time": "03:00 PM",
+            "hours_active": "4.0"
+            }]
+  },
+  {
+  "id": 14,
+  "name": "The Burren",
+  "address": "247 Elm St",
+  "city": "Somerville",
+  "state": "Massachusetts",
+  "latitude": "42.3954421",
+  "longitude": "-71.1239393",
+  "created_at": "2017-05-18T15:42:43.899Z",
+  "updated_at": "2017-05-23T17:49:56.872Z",
+  "deals": [
+            {
+            "id": 143,
+            "title": "Happy Hour",
+            "description": "1\/2 Off Draft Beer & Draft Wines\r\n1\/2 Off Mac & Cheese, 1\/2 Off Irsish Breakast or 1\/2 Off Guinness",
+            "expiration": "2018-06-01",
+            "days": [
+                     {
+                     "id": 2,
+                     "name": "Monday"
+                     },
+                     {
+                     "id": 3,
+                     "name": "Tuesday"
+                     },
+                     {
+                     "id": 4,
+                     "name": "Wednesday"
+                     },
+                     {
+                     "id": 5,
+                     "name": "Thursday"
+                     },
+                     {
+                     "id": 6,
+                     "name": "Friday"
+                     }
+                     ],
+            "start_time": "05:00 PM",
+            "hours_active": "1.0"
+            }
+          ]
+  }
+]
