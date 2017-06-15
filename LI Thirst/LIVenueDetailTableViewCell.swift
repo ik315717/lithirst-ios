@@ -8,7 +8,18 @@ class LIVenueDetailTableViewCell: UITableViewCell {
   @IBOutlet var expandableButtonImageView: UIImageView!
   @IBOutlet var dealDescriptionTopSpaceConstraint: NSLayoutConstraint!
   
-  var isExpanded : Bool = false
+  
+  var isExpanded : Bool = false {
+    didSet {
+      if self.isExpanded {
+        let transform = self.expandableButtonImageView.transform.rotated(by: CGFloat(M_PI / 2.0))
+        self.expandableButtonImageView.transform = transform
+      } else {
+        let transform = self.expandableButtonImageView.transform.rotated(by: CGFloat(-1 * M_PI / 2.0))
+        self.expandableButtonImageView.transform = transform
+      }
+    }
+  }
 
   func timeAvailableString(deal: LIDeal) {
     var startTimeFormatted : String = ""

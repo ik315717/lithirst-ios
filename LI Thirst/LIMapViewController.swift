@@ -43,6 +43,7 @@ class LIMapViewController: LIUIViewController,
     
     self.getCurrentLocation()
     setUpMapView()
+    setKeyboardToolBar()
     self.mapView.delegate = self
     self.mapView.showsUserLocation = true
     
@@ -80,13 +81,33 @@ class LIMapViewController: LIUIViewController,
     }
   }
   
-  // MARK: Navigation
   
-  func pushDetailsViewControllerWith(venue: LIVenue?) {
-    if let selectedVenue = venue {
-      let venueDetailsViewController = LIVenueDetailViewController(venue: selectedVenue)
-      self.navigationController?.pushViewController(venueDetailsViewController, animated: true)
+  // MARK: Location Manager Delegate
+  
+  func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    
+    if let pastLocation = userLocation, let location = locations.first {
+      let meters = location.distance(from: pastLocation)
+      if meters > 10 || userLocationUpdates.count < 5 {
+        setMapLocation(locationToPanTo: location, cordinateSpan: self.locationSpan)
+      }
+      
+      
+      userLocationUpdates.append(meters)
+      if userLocationUpdates.reduce(0, +) / Double(userLocationUpdates.count) < 5.0
+        && userLocationUpdates.count > 10 {
+        locationManger.stopUpdatingLocation()
+      }
     }
+    
+    if let location = locations.first {
+      userLocation = location
+      self.sortVenueListfromUserLocation()
+    }
+  }
+  
+  func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+    print("Location Manager Error: \(error.localizedDescription)")
   }
   
   // MARK: MKMapView Delegate Methods 
@@ -153,6 +174,7 @@ class LIMapViewController: LIUIViewController,
   }
   
   func handleMapPanGesture() {
+
     locationManger.stopUpdatingLocation()
   }
   
@@ -183,32 +205,13 @@ class LIMapViewController: LIUIViewController,
     mapView.addGestureRecognizer(panGesture)
   }
   
-  // MARK: Location Manager Delegate
+  // MARK: Navigation
   
-  func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-
-    if let pastLocation = userLocation, let location = locations.first {
-      let meters = location.distance(from: pastLocation)
-      if meters > 10 || userLocationUpdates.count < 5 {
-        setMapLocation(locationToPanTo: location, cordinateSpan: self.locationSpan)
-      }
-
-      
-      userLocationUpdates.append(meters)
-      if userLocationUpdates.reduce(0, +) / Double(userLocationUpdates.count) < 5.0
-        && userLocationUpdates.count > 10 {
-        locationManger.stopUpdatingLocation()
-      }
+  func pushDetailsViewControllerWith(venue: LIVenue?) {
+    if let selectedVenue = venue {
+      let venueDetailsViewController = LIVenueDetailViewController(venue: selectedVenue)
+      self.navigationController?.pushViewController(venueDetailsViewController, animated: true)
     }
-    
-    if let location = locations.first {
-      userLocation = location
-      self.sortVenueListfromUserLocation()
-    }
-  }
-  
-  func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-    print("Location Manager Error: \(error.localizedDescription)")
   }
   
   // MARK: TableView Delegate Methods
@@ -302,5 +305,27 @@ class LIMapViewController: LIUIViewController,
       }
     }
   }
+  
+  // MARK: Private Methods
+  
+  func setKeyboardToolBar() {
+    let numberToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 50))
+    numberToolbar.barStyle = UIBarStyle.black
+    numberToolbar.items = [UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace,
+                                           target: nil,
+                                           action: nil),
+      UIBarButtonItem(title: "Cancel",
+                      style: UIBarButtonItemStyle.plain,
+                      target: self,
+                      action: #selector(LIMapViewController.stopSearch))]
+    numberToolbar.sizeToFit()
+    numberToolbar.tintColor = UIColor.white
+    self.searchBar.inputAccessoryView = numberToolbar
+  }
+  
+  func stopSearch() {
+    self.searchBar.endEditing(true)
+  }
+  
 
 }

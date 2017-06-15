@@ -15,37 +15,37 @@
             <rect key="frame" x="0.0" y="0.0" width="387" height="107"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tCK-el-opM" id="4i2-jl-DTp">
-                <rect key="frame" x="0.0" y="0.0" width="387" height="107"/>
+                <rect key="frame" x="0.0" y="0.0" width="387" height="106"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tableView_expandable_button" translatesAutoresizingMaskIntoConstraints="NO" id="Opk-7q-97h">
-                        <rect key="frame" x="8" y="16" width="25" height="25"/>
+                        <rect key="frame" x="8" y="16" width="20" height="20"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="25" id="Csp-RN-fHb"/>
-                            <constraint firstAttribute="height" constant="25" id="QwL-35-7sm"/>
+                            <constraint firstAttribute="width" constant="20" id="Csp-RN-fHb"/>
+                            <constraint firstAttribute="height" constant="20" id="QwL-35-7sm"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taco Tuesday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTd-We-jr2">
-                        <rect key="frame" x="41" y="18.5" width="105.5" height="20.5"/>
+                        <rect key="frame" x="36" y="16" width="105.5" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jM9-mC-21T">
-                        <rect key="frame" x="340" y="21.5" width="31" height="14.5"/>
+                        <rect key="frame" x="340" y="19" width="31" height="14.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZu-T5-b4T">
-                        <rect key="frame" x="16" y="41" width="355" height="0.0"/>
+                        <rect key="frame" x="16" y="44" width="355" height="0.0"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="EZu-T5-b4T" firstAttribute="top" secondItem="Opk-7q-97h" secondAttribute="bottom" id="5RK-SI-8gw"/>
+                    <constraint firstItem="EZu-T5-b4T" firstAttribute="top" secondItem="Opk-7q-97h" secondAttribute="bottom" constant="8" id="5RK-SI-8gw"/>
                     <constraint firstItem="wTd-We-jr2" firstAttribute="centerY" secondItem="Opk-7q-97h" secondAttribute="centerY" id="6S9-bk-p5c"/>
                     <constraint firstItem="jM9-mC-21T" firstAttribute="centerY" secondItem="Opk-7q-97h" secondAttribute="centerY" id="6X8-SN-14H"/>
                     <constraint firstAttribute="trailingMargin" secondItem="jM9-mC-21T" secondAttribute="trailing" constant="8" id="Hhn-EP-lym"/>
