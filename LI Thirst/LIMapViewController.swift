@@ -69,8 +69,10 @@ class LIMapViewController: LIUIViewController,
     
     self.setnavigationBar(title: NSLocalizedString("app_name", comment: ""))
     self.tableView.tableFooterView = UIView()
-    self.tableViewContainerView.layer.cornerRadius = 20.0
+
+    self.tableViewContainerView.backgroundColor = UIColor.li_lightBlueColor
     self.tableViewContainerView.clipsToBounds = true
+    self.tableViewContainerView.layer.cornerRadius = 25.0
   }
   
   // MARK: Button Presses

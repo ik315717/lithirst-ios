@@ -74,11 +74,16 @@ class LIVenueDetailViewController: LIUIViewController,
         self.currentDealTimeLeftLabel.font = UIFont.systemFont(ofSize: 26.0, weight: 0.175)
         
         self.currentDealDescriptionLabel.text = dealDescription
-        self.currentDealDescriptionLabel.font = UIFont.systemFont(ofSize: 20.0, weight: 0.0)
       }
       
+
       self.tableViewTitleLabel.font = UIFont.systemFont(ofSize: 22.0)
+    } else {
+      self.currentDealDescriptionLabel.text = NSLocalizedString("venue_detail_no_deal_available",
+                                                                comment: "")
     }
+    
+    self.currentDealDescriptionLabel.font = UIFont.systemFont(ofSize: 20.0, weight: 0.0)
   }
   
   // MARK: TableView Delegate Methods

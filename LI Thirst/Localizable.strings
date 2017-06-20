@@ -10,6 +10,8 @@
 "map_table_view_distance_format" = "%1.1f Miles";
 
 /* Venue Details Controller */
+"venue_detail_cell_time_deal_format" = "%@\n%@ - %@";
+"venue_detail_no_deal_available" = "Sorry, there is no deal right now. Check out the future deals below.";
 "venue_detail_view_hours_left_format" = "%1.0f hrs left";
 "venue_detail_view_back_button_title" = "Map";
-"venue_detail_cell_time_deal_format" = "%@\n%@ - %@";
+

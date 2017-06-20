@@ -558,7 +558,7 @@
 				TargetAttributes = {
 					FB966F7E1E75BAE100842CB8 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 253P3RGEY8;
+						DevelopmentTeam = 3824CU6P2M;
 						ProvisioningStyle = Automatic;
 					};
 					FB966F951E75BAE200842CB8 = {
@@ -1052,12 +1052,15 @@
 			baseConfigurationReference = 429F4CEE502921358771612C /* Pods-LI Thirst.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 253P3RGEY8;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3824CU6P2M;
 				INFOPLIST_FILE = "LI Thirst/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/Frameworks @executable_path/Frameworks $(PLATFORM_DIR)/Developer/Library/Frameworks ";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.LI-Thirst.LI-Thirst";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LI-Thirst.LI-Thirst-AppStore";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1068,11 +1071,13 @@
 			baseConfigurationReference = 16D8EE737039431FB4655F1E /* Pods-LI Thirst.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 253P3RGEY8;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3824CU6P2M;
 				INFOPLIST_FILE = "LI Thirst/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/Frameworks @executable_path/Frameworks $(PLATFORM_DIR)/Developer/Library/Frameworks ";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.LI-Thirst.LI-Thirst";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LI-Thirst.LI-Thirst-AppStore";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;

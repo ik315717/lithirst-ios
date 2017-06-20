@@ -19,26 +19,26 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tableView_expandable_button" translatesAutoresizingMaskIntoConstraints="NO" id="Opk-7q-97h">
-                        <rect key="frame" x="8" y="16" width="20" height="20"/>
+                        <rect key="frame" x="8" y="8" width="20" height="20"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="20" id="Csp-RN-fHb"/>
                             <constraint firstAttribute="height" constant="20" id="QwL-35-7sm"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taco Tuesday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTd-We-jr2">
-                        <rect key="frame" x="36" y="16" width="105.5" height="20.5"/>
+                        <rect key="frame" x="36" y="8" width="105.5" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jM9-mC-21T">
-                        <rect key="frame" x="340" y="19" width="31" height="14.5"/>
+                        <rect key="frame" x="340" y="11" width="31" height="14.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZu-T5-b4T">
-                        <rect key="frame" x="16" y="44" width="355" height="0.0"/>
+                        <rect key="frame" x="16" y="36" width="355" height="0.0"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -50,7 +50,7 @@
                     <constraint firstItem="jM9-mC-21T" firstAttribute="centerY" secondItem="Opk-7q-97h" secondAttribute="centerY" id="6X8-SN-14H"/>
                     <constraint firstAttribute="trailingMargin" secondItem="jM9-mC-21T" secondAttribute="trailing" constant="8" id="Hhn-EP-lym"/>
                     <constraint firstItem="Opk-7q-97h" firstAttribute="leading" secondItem="4i2-jl-DTp" secondAttribute="leading" constant="8" id="Jth-wv-if8"/>
-                    <constraint firstItem="Opk-7q-97h" firstAttribute="top" secondItem="4i2-jl-DTp" secondAttribute="top" constant="16" id="Ldx-dS-bWs"/>
+                    <constraint firstItem="Opk-7q-97h" firstAttribute="top" secondItem="4i2-jl-DTp" secondAttribute="top" constant="8" id="Ldx-dS-bWs"/>
                     <constraint firstItem="jM9-mC-21T" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wTd-We-jr2" secondAttribute="trailing" constant="8" id="W9g-Gv-tRd"/>
                     <constraint firstItem="EZu-T5-b4T" firstAttribute="centerX" secondItem="4i2-jl-DTp" secondAttribute="centerX" id="c6Q-zo-oIw"/>
                     <constraint firstItem="wTd-We-jr2" firstAttribute="leading" secondItem="Opk-7q-97h" secondAttribute="trailing" constant="8" id="hE1-PX-UFD"/>

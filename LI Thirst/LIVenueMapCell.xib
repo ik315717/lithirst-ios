@@ -19,33 +19,33 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nate's Bar and Grill" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHw-1p-3dz">
-                        <rect key="frame" x="8" y="12" width="163" height="23"/>
+                        <rect key="frame" x="8" y="16" width="163" height="23"/>
                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 Dollar Buds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5k8-Yu-yMG">
-                        <rect key="frame" x="8" y="43" width="385" height="21"/>
+                        <rect key="frame" x="8" y="47" width="385" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMK-Dr-eHL">
-                        <rect key="frame" x="393" y="12" width="0.0" height="0.0"/>
+                        <rect key="frame" x="393" y="16" width="0.0" height="0.0"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="YMK-Dr-eHL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="2Kj-RE-Yjw"/>
                     <constraint firstAttribute="trailing" secondItem="5k8-Yu-yMG" secondAttribute="trailing" constant="8" id="31W-6T-joK"/>
                     <constraint firstItem="YMK-Dr-eHL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="yHw-1p-3dz" secondAttribute="trailing" constant="8" id="3ph-Tv-7Ke"/>
                     <constraint firstItem="5k8-Yu-yMG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="8sl-83-pa4"/>
                     <constraint firstItem="yHw-1p-3dz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="IQi-um-UmT"/>
-                    <constraint firstItem="yHw-1p-3dz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="NxD-Bf-rm0"/>
+                    <constraint firstItem="yHw-1p-3dz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="NxD-Bf-rm0"/>
                     <constraint firstItem="YMK-Dr-eHL" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Ogt-N5-mab"/>
                     <constraint firstItem="5k8-Yu-yMG" firstAttribute="top" secondItem="yHw-1p-3dz" secondAttribute="bottom" constant="8" id="TZV-s7-NoG"/>
+                    <constraint firstItem="YMK-Dr-eHL" firstAttribute="top" secondItem="yHw-1p-3dz" secondAttribute="top" id="YWc-vd-Ivr"/>
                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="5k8-Yu-yMG" secondAttribute="bottom" constant="8" id="lGc-0W-PZa"/>
                 </constraints>
             </tableViewCellContentView>

@@ -52,7 +52,7 @@
                                     <rect key="frame" x="0.0" y="495" width="375" height="128"/>
                                     <subviews>
                                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="W4D-VN-GMP">
-                                            <rect key="frame" x="0.0" y="38" width="375" height="90"/>
+                                            <rect key="frame" x="0.0" y="55" width="375" height="73"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </tableView>
                                     </subviews>
@@ -61,7 +61,7 @@
                                     <constraints>
                                         <constraint firstAttribute="height" constant="128" id="76w-sI-FSt"/>
                                         <constraint firstItem="W4D-VN-GMP" firstAttribute="leading" secondItem="fBa-Bd-vgw" secondAttribute="leading" id="8r6-cE-Vuy"/>
-                                        <constraint firstItem="W4D-VN-GMP" firstAttribute="top" secondItem="fBa-Bd-vgw" secondAttribute="top" constant="38" id="ZwQ-Nl-T8K"/>
+                                        <constraint firstItem="W4D-VN-GMP" firstAttribute="top" secondItem="fBa-Bd-vgw" secondAttribute="top" constant="55" id="ZwQ-Nl-T8K"/>
                                         <constraint firstAttribute="bottom" secondItem="W4D-VN-GMP" secondAttribute="bottom" id="kih-lG-SnC"/>
                                         <constraint firstAttribute="trailing" secondItem="W4D-VN-GMP" secondAttribute="trailing" id="mJr-ho-q24"/>
                                     </constraints>
