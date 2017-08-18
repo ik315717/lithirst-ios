@@ -8,6 +8,16 @@ class LIDeal : Mappable, Equatable {
   var daysAvailable : Array<LIDay>?
   var expirationDate : Date?
   var hoursActive : Float?
+  var hoursRemaining : Int {
+    get {
+      if let endTime = self.endTimeAdjustedForDay {
+        return Calendar.current.dateComponents([.hour], from: Date().localizedDate(),
+                                               to: endTime).hour ?? 0
+      }
+      
+      return 0
+    }
+  }
   var startTime : Date?
   var startTimeAdjustedForDay : Date?
   var endTimeAdjustedForDay : Date?
@@ -82,7 +92,6 @@ class LIDeal : Mappable, Equatable {
           }
         }
       }
-
     }
     
     return soonestDay

@@ -17,9 +17,11 @@ class LIMapViewController: LIUIViewController,
   @IBOutlet var contentView: UIView!
   @IBOutlet var mapView: MKMapView!
   @IBOutlet var searchBar: UISearchBar!
+  @IBOutlet var tableView: UITableView!
+  @IBOutlet var tableViewArrowImageView: UIImageView!
   @IBOutlet var tableViewContainerView: UIView!
   @IBOutlet var tableViewHeightConstraint: NSLayoutConstraint!
-  @IBOutlet var tableView: UITableView!
+  @IBOutlet var tableViewPullView: UIView!
   
   var currentTableViewState = tableViewGrabState.Normal
   var locationManger: CLLocationManager!
@@ -73,6 +75,10 @@ class LIMapViewController: LIUIViewController,
     self.tableViewContainerView.backgroundColor = UIColor.li_lightBlueColor
     self.tableViewContainerView.clipsToBounds = true
     self.tableViewContainerView.layer.cornerRadius = 25.0
+    
+    self.tableViewPullView.backgroundColor = UIColor.li_lightBlueColor
+    self.tableViewPullView.clipsToBounds = true
+    self.tableViewPullView.layer.cornerRadius = 25.0
   }
   
   // MARK: Button Presses
@@ -122,7 +128,6 @@ class LIMapViewController: LIUIViewController,
     let annotationView = MKPinAnnotationView()
     annotationView.annotation = annotation
     annotationView.canShowCallout = true
-    annotationView.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
     
     return annotationView
   }
@@ -152,13 +157,12 @@ class LIMapViewController: LIUIViewController,
   
   func addVenuesToMap() {
     for venue in venueList {
-      let annotation = LIPointAnnotation()
+      let annotation = LIPointAnnotation(venue: venue)
       
       if let latitude = venue.latitude, let longitude = venue.longitude {
         let coordinate = CLLocationCoordinate2DMake(latitude, longitude)
         annotation.coordinate = coordinate
         annotation.title = venue.name
-        annotation.venue = venue
         mapView.addAnnotation(annotation)
       }
     }
@@ -176,7 +180,6 @@ class LIMapViewController: LIUIViewController,
   }
   
   func handleMapPanGesture() {
-
     locationManger.stopUpdatingLocation()
   }
   
@@ -273,6 +276,13 @@ class LIMapViewController: LIUIViewController,
       if swipeGesture.direction == .up {
         currentTableViewState = .Top
         tableViewHeightConstraint.constant = tableViewTopHeight
+
+        UIView.animate(withDuration: 1.0,
+                       delay: 0.5,
+                       options: UIViewAnimationOptions.curveEaseIn,
+                       animations: {
+                        self.tableViewArrowImageView.isHidden = true
+        }, completion: nil)
       } else if  swipeGesture.direction == .down {
         currentTableViewState = .Bottom
         tableViewHeightConstraint.constant = tableViewBottomHeight
@@ -281,6 +291,12 @@ class LIMapViewController: LIUIViewController,
       if swipeGesture.direction == .down {
         currentTableViewState = .Normal
         tableViewHeightConstraint.constant = tableViewNormalHeight
+        UIView.animate(withDuration: 1.0,
+                       delay: 0.5,
+                       options: UIViewAnimationOptions.curveEaseOut,
+                       animations: {
+                        self.tableViewArrowImageView.isHidden = false
+        }, completion: nil)
       }
     }
     

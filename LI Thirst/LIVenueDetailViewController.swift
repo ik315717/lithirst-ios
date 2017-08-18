@@ -67,12 +67,18 @@ class LIVenueDetailViewController: LIUIViewController,
  
     // Current Deal Labels
     if (self.activeDeal != nil) {
-      if let _ = activeDeal?.title,
+      if let deal = self.activeDeal,
          let dealDescription = activeDeal?.description {
-        let hoursLeftString = NSLocalizedString("venue_detail_view_hours_left_format", comment: "")
-        self.currentDealTimeLeftLabel.text = String.init(format: hoursLeftString, 3.4)
+        if deal.hoursRemaining == 0 {
+          let hoursLeftString = NSLocalizedString("venue_detail_view_hours_left_1_hour_format", comment: "")
+          self.currentDealTimeLeftLabel.text = hoursLeftString
+          
+        } else {
+          let hoursLeftString = NSLocalizedString("venue_detail_view_hours_left_format", comment: "")
+          self.currentDealTimeLeftLabel.text = String.init(format: hoursLeftString, deal.hoursRemaining)
+        }
+
         self.currentDealTimeLeftLabel.font = UIFont.systemFont(ofSize: 26.0, weight: 0.175)
-        
         self.currentDealDescriptionLabel.text = dealDescription
       }
       
